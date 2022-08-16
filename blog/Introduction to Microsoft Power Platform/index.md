@@ -8,6 +8,7 @@ tags: [Power Platform, LowCode, Power Pages, Power Apps, Power Automate, Power B
 This article is targeted at young innovative minds, who are passionate about building amazing products with Low-Code tools. 
 
 It will be a detailed break down of Microsoft Power Platform for someone who is just hearing about this for the first time, or someone who needs clarity around what Microsoft Power Platform is about. 
+<!-- truncate -->
 
 Lets talk!
 
