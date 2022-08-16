@@ -26,7 +26,7 @@ Since Node.js is installed, we need to create a directory for the project using 
 
 ...for starters
 
-> **npm [Node Package Manager](npmjs.com)** is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js. It consists of an online database of public and paid-for private packages, called the npm registry. It is a command-line tool used to share Node.js packages/modules.
+> **npm [Node Package Manager](https://npmjs.com)** is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js. It consists of an online database of public and paid-for private packages, called the npm registry. It is a command-line tool used to share Node.js packages/modules.
 
 To install a package in this project, navigate to your desired directory and run `npm install package-name` on the terminal. to install a package globally, run `npm install package-name --global` (shortcut -g instead of --global). We need to install Express in this project's directory, we'll run the command `npm install express --save`. also for --save (shortcut -s) now our package is added to the list of dependencies in the package.json file.
 
