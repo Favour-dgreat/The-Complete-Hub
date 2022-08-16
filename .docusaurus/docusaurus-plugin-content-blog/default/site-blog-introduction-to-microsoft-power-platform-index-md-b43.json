@@ -1,0 +1,66 @@
+{
+  "permalink": "/blog/introduction-to-power-platform",
+  "source": "@site/blog/Introduction to Microsoft Power Platform/index.md",
+  "title": "Introduction to Microsoft Power Platform",
+  "description": "This article is targeted at young innovative minds, who are passionate about building amazing products with Low-Code tools.",
+  "date": "2022-08-16T15:15:21.000Z",
+  "formattedDate": "August 16, 2022",
+  "tags": [
+    {
+      "label": "Power Platform",
+      "permalink": "/blog/tags/power-platform"
+    },
+    {
+      "label": "LowCode",
+      "permalink": "/blog/tags/low-code"
+    },
+    {
+      "label": "Power Pages",
+      "permalink": "/blog/tags/power-pages"
+    },
+    {
+      "label": "Power Apps",
+      "permalink": "/blog/tags/power-apps"
+    },
+    {
+      "label": "Power Automate",
+      "permalink": "/blog/tags/power-automate"
+    },
+    {
+      "label": "Power BI",
+      "permalink": "/blog/tags/power-bi"
+    }
+  ],
+  "readingTime": 9.965,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Favour Adeshina",
+      "title": "Power Platform Advocate",
+      "url": "https://github.com/Favour-dgreat",
+      "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+      "key": "favour"
+    }
+  ],
+  "frontMatter": {
+    "slug": "introduction-to-power-platform",
+    "title": "Introduction to Microsoft Power Platform",
+    "authors": "favour",
+    "tags": [
+      "Power Platform",
+      "LowCode",
+      "Power Pages",
+      "Power Apps",
+      "Power Automate",
+      "Power BI"
+    ]
+  },
+  "prevItem": {
+    "title": "Creating a Node.js web server with Express Framework",
+    "permalink": "/blog/Create-a-Node.js-web-server-with-Express-Framework"
+  },
+  "nextItem": {
+    "title": "MDX Blog Post",
+    "permalink": "/blog/mdx-blog-post"
+  }
+}

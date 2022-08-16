@@ -1,0 +1,52 @@
+{
+  "permalink": "/blog/Create-a-Node.js-web-server-with-Express-Framework",
+  "source": "@site/blog/Create Node.js Web server/index.md",
+  "title": "Creating a Node.js web server with Express Framework",
+  "description": "Node.js is a javascript framework that allows us to run javascript outside the browser, it is a javascript runtime built on chrome v8 engine.",
+  "date": "2022-08-16T15:15:21.000Z",
+  "formattedDate": "August 16, 2022",
+  "tags": [
+    {
+      "label": "Node.js",
+      "permalink": "/blog/tags/node-js"
+    },
+    {
+      "label": "Backend development",
+      "permalink": "/blog/tags/backend-development"
+    },
+    {
+      "label": "express",
+      "permalink": "/blog/tags/express"
+    },
+    {
+      "label": "Web server",
+      "permalink": "/blog/tags/web-server"
+    }
+  ],
+  "readingTime": 3.11,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Jesse Oluwadamilare",
+      "title": "JavaScript Developer",
+      "url": "https://github.com/jesse-crypted",
+      "imageURL": "https://avatars.githubusercontent.com/u/98085822?v=4",
+      "key": "jesse"
+    }
+  ],
+  "frontMatter": {
+    "slug": "Create-a-Node.js-web-server-with-Express-Framework",
+    "title": "Creating a Node.js web server with Express Framework",
+    "authors": "jesse",
+    "tags": [
+      "Node.js",
+      "Backend development",
+      "express",
+      "Web server"
+    ]
+  },
+  "nextItem": {
+    "title": "Introduction to Microsoft Power Platform",
+    "permalink": "/blog/introduction-to-power-platform"
+  }
+}
