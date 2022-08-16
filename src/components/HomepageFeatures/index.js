@@ -139,7 +139,6 @@ function Feature({title, description, author, date}) {  return (
  {date}
 </Card.Text>
 
-<Link to="src/pages/author/author.js"><Button style={{backgroundColor: "##000308", padding: 10, borderColor: "##000308", borderStyle: "none", borderRadius: 5, cursor:"pointer", fontWeight:"bold"}} >Read More</Button></Link>
         </Card.Body>
       </Card>
       <br />
