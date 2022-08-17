@@ -167,7 +167,7 @@ export default function HomepageFeatures() {
         <figure>
         <blockquote class="blockquote">
         <p className="mb-5" style={{fontSize:25, color:"white"}}>
-        "Contributing to the pull of resources out there is your own little way of improving the ecosystem and helping someone out there, with your article."
+        "Contributing to the poll of resources out there is your own little way of improving the ecosystem and helping someone out there, with your article."
       </p>
         </blockquote>
         <figcaption class="blockquote-footer">
