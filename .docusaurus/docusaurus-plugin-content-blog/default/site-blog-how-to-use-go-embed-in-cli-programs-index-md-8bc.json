@@ -3,7 +3,7 @@
   "source": "@site/blog/How-to-use-go-embed-in-cli-programs/index.md",
   "title": "Embedding templates and static files in CLI using //go:embed",
   "description": "This article is for someone who just started writing Go, and have no idea about //go 1.16.",
-  "date": "2022-08-19T00:23:24.011Z",
+  "date": "2022-08-19T03:05:06.000Z",
   "formattedDate": "August 19, 2022",
   "tags": [
     {
@@ -45,12 +45,8 @@
       "static files"
     ]
   },
-  "prevItem": {
+  "nextItem": {
     "title": "Setting up Azure AD B2C for User authentication in Power Pages",
     "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
-  },
-  "nextItem": {
-    "title": "Creating a Node.js web server with Express Framework",
-    "permalink": "/blog/Create-a-Node.js-web-server-with-Express-Framework"
   }
 }

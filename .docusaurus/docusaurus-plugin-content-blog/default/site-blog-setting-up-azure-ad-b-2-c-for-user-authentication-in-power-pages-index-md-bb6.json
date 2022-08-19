@@ -3,7 +3,7 @@
   "source": "@site/blog/Setting up Azure AD B2C for user authentication in Power Pages/index.md",
   "title": "Setting up Azure AD B2C for User authentication in Power Pages",
   "description": "Using Azure AD B2C as an identity provider in Power Pages",
-  "date": "2022-08-19T01:51:35.318Z",
+  "date": "2022-08-19T03:05:06.000Z",
   "formattedDate": "August 19, 2022",
   "tags": [
     {
@@ -46,11 +46,11 @@
     ]
   },
   "prevItem": {
-    "title": "Using Data Connectors while building Power Apps",
-    "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
-  },
-  "nextItem": {
     "title": "Embedding templates and static files in CLI using //go:embed",
     "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
+  },
+  "nextItem": {
+    "title": "Using Data Connectors while building Power Apps",
+    "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
   }
 }

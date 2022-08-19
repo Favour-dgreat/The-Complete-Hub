@@ -320,120 +320,60 @@
       "blogSidebarTitle": "All posts",
       "blogPosts": [
         {
-          "id": "using-timer-control-input-component-in-power-apps",
+          "id": "embedding-static-files-in-cli-with-go-embed",
           "metadata": {
-            "permalink": "/blog/using-timer-control-input-component-in-power-apps",
-            "source": "@site/blog/using-timer-control-input-component-in-power-apps/index.md",
-            "title": "Using the Timer Control Input Component in Power Apps",
-            "description": "In this article we will be following up from our previous article Using Data Connectors with Microsoft Power Apps to learn about the Timer Control input component used in Microsoft Power Apps.",
-            "date": "2022-08-19T02:34:16.247Z",
+            "permalink": "/blog/embedding-static-files-in-cli-with-go-embed",
+            "source": "@site/blog/How-to-use-go-embed-in-cli-programs/index.md",
+            "title": "Embedding templates and static files in CLI using //go:embed",
+            "description": "This article is for someone who just started writing Go, and have no idea about //go 1.16.",
+            "date": "2022-08-19T03:05:06.000Z",
             "formattedDate": "August 19, 2022",
             "tags": [
               {
-                "label": "Power Platform",
-                "permalink": "/blog/tags/power-platform"
+                "label": "Golang",
+                "permalink": "/blog/tags/golang"
               },
               {
-                "label": "LowCode",
-                "permalink": "/blog/tags/low-code"
+                "label": "Go",
+                "permalink": "/blog/tags/go"
               },
               {
-                "label": "Power Pages",
-                "permalink": "/blog/tags/power-pages"
+                "label": "CLI",
+                "permalink": "/blog/tags/cli"
               },
               {
-                "label": "Auth",
-                "permalink": "/blog/tags/auth"
+                "label": "static files",
+                "permalink": "/blog/tags/static-files"
               }
             ],
-            "readingTime": 3.91,
+            "readingTime": 3.14,
             "hasTruncateMarker": true,
             "authors": [
               {
-                "name": "Favour Adeshina",
-                "title": "Power Platform Advocate",
-                "url": "https://github.com/Favour-dgreat",
-                "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
-                "key": "favour"
+                "name": "Saintmalik",
+                "title": "Pentester and an AppSec Guy",
+                "url": "https://github.com/saintmalik",
+                "imageURL": "https://avatars.githubusercontent.com/u/37118134?v=4",
+                "key": "malik"
               }
             ],
             "frontMatter": {
-              "slug": "using-timer-control-input-component-in-power-apps",
-              "title": "Using the Timer Control Input Component in Power Apps",
-              "authors": "favour",
+              "slug": "embedding-static-files-in-cli-with-go-embed",
+              "title": "Embedding templates and static files in CLI using //go:embed",
+              "authors": "malik",
               "tags": [
-                "Power Platform",
-                "LowCode",
-                "Power Pages",
-                "Auth"
+                "Golang",
+                "Go",
+                "CLI",
+                "static files"
               ]
-            },
-            "nextItem": {
-              "title": "Using Data Connectors while building Power Apps",
-              "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
-            }
-          },
-          "content": "In this article we will be following up from our previous article **Using Data Connectors with Microsoft Power Apps** to learn about the Timer Control input component used in Microsoft Power Apps. \n\n<!-- truncate -->\n\n## What is Timer Control in PowerApps?\nTimer Control in PowerApps, is simply an Input Component amongst the Insert tools used for building apps. \n\n![Screenshot 2022-04-23 at 23.20.40.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650752465275/HaJJ1AO--.png)\n\nIt's also a control that can determine how your app responds after a certain amount of time.\n\nTimers can, for example, determine how long a control appears or change other properties of a control after a certain amount of time has passed.\n\n\n### Key Properties for using the Timer Control Component in Power Apps\n\n**Duration** – This is how long a timer runs in milliseconds. The maximum is 24 hours expressed in milliseconds. Default is 60 seconds.\n\n**OnTimerEnd** – This is an actions to perform when a timer finishes running.\n\n**Repeat** – The repeat function determines if a timer automatically restarts when it finishes couting, making use of the set time.\n\n**AutoPause** – This function determines if the timer control automatically pauses, after a user navigates to a different screen.\n\n**AutoStart** – The AutoStart function determines if the timer control automatically starts to play when the user navigates to the screen that contains that control.\n\n**OnSelect** – OnSelect is used to set actions to perform when the user taps or clicks the Timer component.\n\n**OnTimerStart** – OnTimerStart helps a user to set actions to perform when a timer starts to run.\n\n\n# Implementing Timer Control Component \nFollowing up from a previous article, where we built an application using Power Apps, kindly go back to the article before you proceed; [Using Data Connectors with Microsoft Power Apps](www.thecompletehub.tech/blog/using-data-connectors-with-microsoft-power-apps). Also, you can check out this video, to understand better, before we proceed:\n\n%[https://www.youtube.com/shorts/sitW9uOeTvg]\n\nNow let us implement our Timer Control Component in our previously built Power App: \n\nGo to Screen 3 **(Our Success Screen)**\n![Screenshot 2022-04-23 at 23.36.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753412047/8xDuLRr3X.png)\n\nClick on the Insert Tool Item and Search for \"Timer\"\n![Screenshot 2022-04-23 at 23.38.06.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753546954/uo87lDPs4.png)\n\nAdd the Timer to Screen3 Components\n\n![Screenshot 2022-04-23 at 23.40.03.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753637767/XaTil-hWw.png)\n\n**Now, we need to set a few parameters for the Timer Component:**\n\nFirstly, is the duration. \n\nYou can specify in milliseconds here. Example: 3000 i.e. 3 seconds\n![Screenshot 2022-04-23 at 23.42.13.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753746393/MRzZPk_pB.png)\n\nNext, you’ll need to set the Start flag. By default, this is set to false. The Start is triggered when the value is set to True. This needs to be dynamically set from elsewhere i.e. in this example, you’ll need to trigger from where you come to this screen so that the Timer starts the countdown.\n\n![Screenshot 2022-04-23 at 23.44.00.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753870590/sEt69kDsO.png)\n\nNow, the way I set this is, first I create a variable from the place where I want to trigger the Timer to go off, that is my previous Screen (Screen2).  I’m creating and setting a variable called startTimer and setting the value to true:\n\n![Screenshot 2022-04-24 at 00.09.54.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755420667/M5h7eltB1.png)\n\nYou will then return to your Timer Component in Screen3 and set this variable startTimer to the Start property.\n\n![Screenshot 2022-04-23 at 23.53.36.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650754432720/q1AghZ4ve.png)\n\nAlso, you’ll need to set what needs to happen when the Timer ends. So, you have to write the OnTimerEnd property as to what will happen once the Timer ends.\nHere, you’ll Navigate to the 'Screen4’ as per our scenario and then also, set the startTimer flag to ‘false’ since you want to reuse this again for the next submission.\n\nNow this works fine as Screen 4 loads immediately after the duration of the timer is elapsed.\n\nFinally, I will hide the timer component from showing on the screen. \nTo do this I will set the visible property to false. It is set to true by default, and by doing this immediately our timer becomes not visible but still works properly. \n\n\n![Screenshot 2022-04-24 at 00.14.39.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755803020/zV9xntL2b.png)\n\n\n![Screenshot 2022-04-24 at 00.14.52.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755832207/AivDtFZg9.png)\n\nIn conclusion, with this new feature added to our app, we can now remove the previous buttons added to navigate to Screen4 from the Success Screen (Screen3), and this is the new look for Screen 3\n\n![Screenshot 2022-04-24 at 00.19.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755992913/aB_UqMDol.png)\n\nNow we have improved our app by using the Timer control component to our app. \n\n\nAs said earlier to fully understand everything discussed up till this point, kindly read and understand the previous article on **Using Data Connectors with Microsoft Power Apps** \n\nFinally, I will be ending this article, with helpful resources to aid you learning\n\n## Learning Resources\n\n1. [Timer control in Power Apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/control-timer?WT.mc_id=DX-MVP-5003911)\n2. [Formula reference for Power Apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/formula-reference)\n3. [Get started with formulas in canvas apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-formulas)\n4. [Controls and properties in canvas apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/reference-properties)\n5. [Power Apps Ideas (preview)](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas)\n6. [Microsoft's Power Platform - LowCode Platform](https://thecompletehub.tech/microsofts-power-platform-lowcode-platform)"
-        },
-        {
-          "id": "using-data-connectors-with-microsoft-power-apps",
-          "metadata": {
-            "permalink": "/blog/using-data-connectors-with-microsoft-power-apps",
-            "source": "@site/blog/Using-data-connectors-with-power-apps/index.md",
-            "title": "Using Data Connectors while building Power Apps",
-            "description": "Data is very important while building every native application, this is because in every application, it is either you are requesting/fetching data, sending data, or perhaps doing both. And in this article we will be learning more about data and data connectors, and how to make use of them in a Power Apps Project.",
-            "date": "2022-08-19T02:00:19.672Z",
-            "formattedDate": "August 19, 2022",
-            "tags": [
-              {
-                "label": "Power Platform",
-                "permalink": "/blog/tags/power-platform"
-              },
-              {
-                "label": "LowCode",
-                "permalink": "/blog/tags/low-code"
-              },
-              {
-                "label": "Power Apps",
-                "permalink": "/blog/tags/power-apps"
-              },
-              {
-                "label": "Data Connectors",
-                "permalink": "/blog/tags/data-connectors"
-              }
-            ],
-            "readingTime": 3.23,
-            "hasTruncateMarker": true,
-            "authors": [
-              {
-                "name": "Favour Adeshina",
-                "title": "Power Platform Advocate",
-                "url": "https://github.com/Favour-dgreat",
-                "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
-                "key": "favour"
-              }
-            ],
-            "frontMatter": {
-              "slug": "using-data-connectors-with-microsoft-power-apps",
-              "title": "Using Data Connectors while building Power Apps",
-              "authors": "favour",
-              "tags": [
-                "Power Platform",
-                "LowCode",
-                "Power Apps",
-                "Data Connectors"
-              ]
-            },
-            "prevItem": {
-              "title": "Using the Timer Control Input Component in Power Apps",
-              "permalink": "/blog/using-timer-control-input-component-in-power-apps"
             },
             "nextItem": {
               "title": "Setting up Azure AD B2C for User authentication in Power Pages",
               "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
             }
           },
-          "content": "Data is very important while building every native application, this is because in every application, it is either you are requesting/fetching data, sending data, or perhaps doing both. And in this article we will be learning more about data and data connectors, and how to make use of them in a Power Apps Project. \n\n<!-- truncate -->\n\n## What are Data Connectors?\nIn very clear terms, \"Data Connectors\" connects or communicates with the data source in every power app. Data is stored in a data source, and you bring that data into your app by creating a connection.\n\nIn Microsoft Power Apps a connector may provide tables of data or actions. Some connectors provide only tables, some provide only actions, and some provide both. Also, your connector may be either a **standard or custom connector**.\n\n\n\n### Popular Connectors used in Microsoft Power Apps\n\n![Screenshot 2022-03-23 at 21.41.16.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648068186548/PpzISxxP8.png)\n\n\n### Standard and Custom Connectors\nStandard Connectors are connectors provided by Power Apps for many commonly used data sources. If Power Apps has a standard connector for the type of data source that you want to use, you should use that connector, those are what are referred to as Standard Custom Connectors.\n\nThe image above showing popular connectors are all Standard Connectors. \n\nBut in a situation where you want to connect to other types of data sources, such as the one you built, then they are referred to as Custom Connectors \n\nCheck out this article for more on  Custom Connectors - [Register and use custom connectors](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/register-custom-api)\n\n\n## Connecting to Microsoft Dataverse\n\nMicrosoft Dataverse lets you securely store and manage data that are used by business applications. \nData within Dataverse is stored within a set of tables. A table is a set of rows (formerly referred to as records) and columns (formerly referred to as fields/attributes). Each column in the table is designed to store a certain type of data, for example, name, age, salary, and so on.\n\nNow with the understanding of the Dataverse let us get into this codelab!\n\n## Building a simple record-keeping app with Google Sheets (a Standard Connector)\n1. [Sign in to Power Apps](https://powerapps.microsoft.com/en-gb/) If you don't already have a Power Apps account, click the Start Free button. \n\n![Screenshot 2022-03-23 at 22.08.09.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648069794826/R9dcIU9gf.png)\n\n2. After successful sign in to Power Apps this is what you should have now! \n\n![Screenshot 2022-03-23 at 22.06.26.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648070361469/Nw9BDRTVW.png) \nClick on the Dataverse card. \n\n3. You should have this screen now, showing previous connections. Then you click on New Connection\n\n![Screenshot 2022-03-23 at 22.44.33.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648071904563/nF1IbpMyF.png)\n\n4. If you followed the previous step properly, you should have this now, then click on Google Sheets and authenticate with your Google account. \n\n![Screenshot 2022-03-23 at 22.49.21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072193448/xuF2XoCxq.png)\nNow you choose a dataset, from a set of previous google sheet documents or perhaps you search for the one you have in mind just as I have done here. \n\n5. The next option is to choose a table or create a new one. \n\n![Screenshot 2022-03-23 at 22.50.57.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072298364/RbnL3xXvZ.png)\n\n6. And finally you should have a very simple app for you with the data from the table you chose or created. Just as I have here too. \n\n![Screenshot 2022-03-23 at 22.52.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072410585/B6m12frDk.png)\n\nThat is the end of this codelab and hope you were able to follow it properly. \n\nI will also be ending this article here now, leaving you with resources for further study. \n\n## Resources\n1. [Overviewof connectors for canvas apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections-list)\n2. [Use custom connectors in a Power Apps canvas app](https://docs.microsoft.com/en-us/learn/modules/use-custom-connectors-in-powerapps-canvas-app/)\n3. [Microsoft Dataverse Documentation](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/)\n4. [Use custom connectors with the timeline control](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/custom-connectors-timeline-control)\n\nSo concluding now, in this article we understood what are Data connectors, Popular connectors used in Microsoft Power Apps, Standard and Custom connectors, Connecting to Microsoft Dataverse and finally we had a codelab that taught us how to Connect or Build an app with data gotten from Google Sheet, which is an example of a Standard Connector. \n\nThank You"
+          "content": "This article is for someone who just started writing Go, and have no idea about //go:embed feature which came with the released version: 1.16.\n\nA project I was working on recently led to the discoveries.\n\n<!--truncate-->\n\n## So what is //go:embed?\n\nThe embed package allows us to embed static/template or directories into our Go program\n\n## When should you use //go:embed in your project?\n//go:embed can be used in situations where the file or assets won't change or be modified after build, dont shoot yourself in the leg by embedding files that are subjected to modifications e.g ```config.json``` and all type of files similar to this\n\nexamples of assets that you can use ```//go:embed``` for are ```templates/css``` files and anything similar to this\n\n## How to use it in CLI programs?\n\nIf you are writing your CLI tool using frameworks like cobra, urfave-cli, you will know that your commands files e.g root.go and the likes are alway in a \"cmd\" folder\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n├─ go.mod\n├─ go.sum\n├─ main.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n```\n\nand the rule that comes with //go:embed is that you can only embed via your root folder, so lets say you have your template folder inside your main project folder, just the way my project folder is above\n\nThen you can easily embed using main.go file in your root folder or any other go file in root folder\n\nbut in situation where your template files is needed or called inside your \"cmd\" folder, i need to embed my template from my cmd>>config.go file.\n\nIt becomes tricky from there? you get it right? meaning  //go:embed won't work, it will start spitting errors like ```pattern ****/: no matching files found```\n\nbecause you can only use embed from the root files and now you need to call it from a file inside the \"cmd\" which is not available on the root.\n\ni was stucked man, spent two to three days thinking and searching the internet for solution, pushing my project depends on getting the static/template assets files embed.\n\nNow you probably thinking why dont i move my template folder into the \"cmd\" folder? yes i did that too, but using   ```//go:embed templates/*.html``` wasnt working still\n\nbut at last i stumbled upon https://github.com/plentico/plenti repo, the guy did what i have been trying to do, infact he has lot of static files\n\nbut what he did is different from what every article i have come acrossed did and shared, he used this syntax ```//go:embed all:yourfolders/*``` while other content out there states to use this ```//go:embed yourfolders/*```\n\ndon't get me wrong both ar correct, but ```//go:embed all:yourfolders/*```  works well for embedding from files that are not in root folder, in situations where your folder is like this\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n├─ go.mod\n├─ go.sum\n├─ main.go\n```\n\nand how is i embedthe templates in my config.go\n\n```go title=\"hello_cobra/cmd/config.go\"\npackage cmd\n\nimport (\n\t\"embed\"\n\t\"fmt\"\n\t\"net/http\"\n\t\"text/template\"\n\n\t\"github.com/spf13/cobra\"\n)\n\n//go:embed all:templates/*.html   //this means, embed all files ending with \".html\"  in the templates folder even when ignored\nvar TempFs embed.FS //assign the variable TempFs to embed.FS, FS means (File System)\n\nvar tmpl *template.Template //tmpl is a type pointer to template.Template,\n\n\nfunc init() {\n\trootCmd.AddCommand(configCmd)\n\ttmpl = template.Must(template.ParseFS(TempFs, \"templates/*.html\"))\n}\n\nfunc myTempl(w http.ResponseWriter, _ *http.Request) {\n\n///you can do all your codes here,\n\terr = tmpl.ExecuteTemplate(w, \"creds.html\", nil) //Executing the template\n\tif err != nil {\n\t\tlog.Fatal(\"Error loading index template: \", err) //log an error, if the template cant be started\n\t}\n}\n```\n\nAnd that's all, If you want to learn more about //go:embed read over here <a href=\"https://pkg.go.dev/embed\">here</a>."
         },
         {
           "id": "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
@@ -442,7 +382,7 @@
             "source": "@site/blog/Setting up Azure AD B2C for user authentication in Power Pages/index.md",
             "title": "Setting up Azure AD B2C for User authentication in Power Pages",
             "description": "Using Azure AD B2C as an identity provider in Power Pages",
-            "date": "2022-08-19T01:51:35.318Z",
+            "date": "2022-08-19T03:05:06.000Z",
             "formattedDate": "August 19, 2022",
             "tags": [
               {
@@ -485,63 +425,63 @@
               ]
             },
             "prevItem": {
-              "title": "Using Data Connectors while building Power Apps",
-              "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
-            },
-            "nextItem": {
               "title": "Embedding templates and static files in CLI using //go:embed",
               "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
+            },
+            "nextItem": {
+              "title": "Using Data Connectors while building Power Apps",
+              "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
             }
           },
           "content": "## Using Azure AD B2C as an identity provider in Power Pages\n\nIn this article, we will be taking a detailed breakdown of how to use **Microsoft Azure AD B2C as an identity provider in Power Pages, for setting up authentication**.\n<!-- truncate -->\n\nLet's get right into it!\n\n# What is Azure AD B2C?\n\nAzure Active Directory Business-to-Customer (Azure AD B2C) is an identity management service of Microsoft Azure that enables custom control of how your customers sign up, sign in, and manage their profiles when using your iOS, Android, .NET, single-page (SPA), and other applications.\n\nAzure AD B2C is a separate service from Azure Active Directory (Azure AD). It is built on the same technology as Azure AD but for a different purpose.\n\nAzure AD B2C provides a highly customizable **User Experience** to suit and blend with your brand seamlessly. Allowing you to customize every page when a user signs up, signs in, and modifies their profile information, providing a native look and feel that follows your web, mobile, and other applications. \n\nCheck out the docs for more information [Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/).\n\n# Using Azure AD B2C in Power Pages\nPower Pages supports authentication processes and provides various authentication providers to handle authentication. \n\n\n![Screenshot 2022-07-12 at 19.41.53.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657651546255/11Q3FMgDf.png)\n\nWith this, you can provide and set up several authentication providers on your website. \n\nNow, let us see how to set up Azure AD B2C to handle our authentication needs for our websites while building with **Microsoft Power Pages**.\n\n**Requirements**\n\n1. To duly follow this tutorial you need to have an Azure account and an active subscription plan\n\n2. Before you can use the Azure AD B2C for authentication, they must be registered in a tenant that you manage.\n\n3. Also, you need to have Microsoft.AzureActiveDirectory as a resource provider for the Azure subscription you're using. \n\nFollow this tutorial, to **[Create an Azure Active Directory B2C tenant](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant)**\n\nIf you followed the tutorial carefully, you should have successfully created your Azure Active Directory B2C tenant. \n\n**Next Step:**\nThe next step for setting up Azure AD B2C authentication for Power Pages is to **Register a web application in Azure Active Directory B2C**. \n\nKindly follow this tutorial: **[Register a web application in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga)**\n\nIf you successfully followed the docs properly, you should have your web application registered in Azure Active Directory B2C.\n\nFollowing the screenshot below, you should have your registered web application:\n\n![Screenshot 2022-07-15 at 00.00.39.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657839670006/FPVddK1M2.png)\n\nThe next thing to do is to **set up user flows and custom policies**. \nLet us follow this tutorial/documentation: [Create User flows and custom policies in Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-user-flows?pivots=b2c-user-flow)\n\nAfter following the previous tutorial in the link above, **(kindly get back to it, before you proceed with this step)**, let us head back to Identity Configuration Page in Power Pages, to complete our Configuration settings.\n\n![Main.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657842228366/z3APN-v_L.png)\n\n**A few things to note, while configuring your Identity Configuration page in Power Pages: \n**\n1. Authority: This is the issuer URL defined in the metadata of the sign-up & sign-in policy user flow \n![download.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657842681698/htdAL6Oc2.png)\n\n2. Client ID: The ID associated with the application created in Azure Active Directory B2C tenant to be used with the portal. \n![download (1).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657843099050/odu1y60UV.png)\n\n3. Redirect URL: This is the location where Azure AD B2C will send an authentication response. Enter the portal URL. You only need to change the redirect URI if you're using a custom domain name.\n\nKindly follow this tutorial/documentation to complete the Configuration settings on Power Pages: [Configure the Azure Active Directory B2C provider manually](https://docs.microsoft.com/en-us/power-apps/maker/portals/configure/configure-azure-ad-b2c-provider-manual?WT.mc_id=ppac_inproduct_resources).\n\nHit the confirm button to save and apply the settings applied. \n\n![Screenshot 2022-07-15 at 01.03.20.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657843456855/BwuTd6Jpn.png)\n\nNow test your application and if you followed all the steps duly you would have set up and configured Azure AD B2C for user authentication in Microsoft Power Pages."
         },
         {
-          "id": "embedding-static-files-in-cli-with-go-embed",
+          "id": "using-data-connectors-with-microsoft-power-apps",
           "metadata": {
-            "permalink": "/blog/embedding-static-files-in-cli-with-go-embed",
-            "source": "@site/blog/How-to-use-go-embed-in-cli-programs/index.md",
-            "title": "Embedding templates and static files in CLI using //go:embed",
-            "description": "This article is for someone who just started writing Go, and have no idea about //go 1.16.",
-            "date": "2022-08-19T00:23:24.011Z",
+            "permalink": "/blog/using-data-connectors-with-microsoft-power-apps",
+            "source": "@site/blog/Using-data-connectors-with-power-apps/index.md",
+            "title": "Using Data Connectors while building Power Apps",
+            "description": "Data is very important while building every native application, this is because in every application, it is either you are requesting/fetching data, sending data, or perhaps doing both. And in this article we will be learning more about data and data connectors, and how to make use of them in a Power Apps Project.",
+            "date": "2022-08-19T03:05:06.000Z",
             "formattedDate": "August 19, 2022",
             "tags": [
               {
-                "label": "Golang",
-                "permalink": "/blog/tags/golang"
+                "label": "Power Platform",
+                "permalink": "/blog/tags/power-platform"
               },
               {
-                "label": "Go",
-                "permalink": "/blog/tags/go"
+                "label": "LowCode",
+                "permalink": "/blog/tags/low-code"
               },
               {
-                "label": "CLI",
-                "permalink": "/blog/tags/cli"
+                "label": "Power Apps",
+                "permalink": "/blog/tags/power-apps"
               },
               {
-                "label": "static files",
-                "permalink": "/blog/tags/static-files"
+                "label": "Data Connectors",
+                "permalink": "/blog/tags/data-connectors"
               }
             ],
-            "readingTime": 3.14,
+            "readingTime": 3.23,
             "hasTruncateMarker": true,
             "authors": [
               {
-                "name": "Saintmalik",
-                "title": "Pentester and an AppSec Guy",
-                "url": "https://github.com/saintmalik",
-                "imageURL": "https://avatars.githubusercontent.com/u/37118134?v=4",
-                "key": "malik"
+                "name": "Favour Adeshina",
+                "title": "Power Platform Advocate",
+                "url": "https://github.com/Favour-dgreat",
+                "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+                "key": "favour"
               }
             ],
             "frontMatter": {
-              "slug": "embedding-static-files-in-cli-with-go-embed",
-              "title": "Embedding templates and static files in CLI using //go:embed",
-              "authors": "malik",
+              "slug": "using-data-connectors-with-microsoft-power-apps",
+              "title": "Using Data Connectors while building Power Apps",
+              "authors": "favour",
               "tags": [
-                "Golang",
-                "Go",
-                "CLI",
-                "static files"
+                "Power Platform",
+                "LowCode",
+                "Power Apps",
+                "Data Connectors"
               ]
             },
             "prevItem": {
@@ -549,11 +489,71 @@
               "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
             },
             "nextItem": {
+              "title": "Using the Timer Control Input Component in Power Apps",
+              "permalink": "/blog/using-timer-control-input-component-in-power-apps"
+            }
+          },
+          "content": "Data is very important while building every native application, this is because in every application, it is either you are requesting/fetching data, sending data, or perhaps doing both. And in this article we will be learning more about data and data connectors, and how to make use of them in a Power Apps Project. \n\n<!-- truncate -->\n\n## What are Data Connectors?\nIn very clear terms, \"Data Connectors\" connects or communicates with the data source in every power app. Data is stored in a data source, and you bring that data into your app by creating a connection.\n\nIn Microsoft Power Apps a connector may provide tables of data or actions. Some connectors provide only tables, some provide only actions, and some provide both. Also, your connector may be either a **standard or custom connector**.\n\n\n\n### Popular Connectors used in Microsoft Power Apps\n\n![Screenshot 2022-03-23 at 21.41.16.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648068186548/PpzISxxP8.png)\n\n\n### Standard and Custom Connectors\nStandard Connectors are connectors provided by Power Apps for many commonly used data sources. If Power Apps has a standard connector for the type of data source that you want to use, you should use that connector, those are what are referred to as Standard Custom Connectors.\n\nThe image above showing popular connectors are all Standard Connectors. \n\nBut in a situation where you want to connect to other types of data sources, such as the one you built, then they are referred to as Custom Connectors \n\nCheck out this article for more on  Custom Connectors - [Register and use custom connectors](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/register-custom-api)\n\n\n## Connecting to Microsoft Dataverse\n\nMicrosoft Dataverse lets you securely store and manage data that are used by business applications. \nData within Dataverse is stored within a set of tables. A table is a set of rows (formerly referred to as records) and columns (formerly referred to as fields/attributes). Each column in the table is designed to store a certain type of data, for example, name, age, salary, and so on.\n\nNow with the understanding of the Dataverse let us get into this codelab!\n\n## Building a simple record-keeping app with Google Sheets (a Standard Connector)\n1. [Sign in to Power Apps](https://powerapps.microsoft.com/en-gb/) If you don't already have a Power Apps account, click the Start Free button. \n\n![Screenshot 2022-03-23 at 22.08.09.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648069794826/R9dcIU9gf.png)\n\n2. After successful sign in to Power Apps this is what you should have now! \n\n![Screenshot 2022-03-23 at 22.06.26.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648070361469/Nw9BDRTVW.png) \nClick on the Dataverse card. \n\n3. You should have this screen now, showing previous connections. Then you click on New Connection\n\n![Screenshot 2022-03-23 at 22.44.33.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648071904563/nF1IbpMyF.png)\n\n4. If you followed the previous step properly, you should have this now, then click on Google Sheets and authenticate with your Google account. \n\n![Screenshot 2022-03-23 at 22.49.21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072193448/xuF2XoCxq.png)\nNow you choose a dataset, from a set of previous google sheet documents or perhaps you search for the one you have in mind just as I have done here. \n\n5. The next option is to choose a table or create a new one. \n\n![Screenshot 2022-03-23 at 22.50.57.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072298364/RbnL3xXvZ.png)\n\n6. And finally you should have a very simple app for you with the data from the table you chose or created. Just as I have here too. \n\n![Screenshot 2022-03-23 at 22.52.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072410585/B6m12frDk.png)\n\nThat is the end of this codelab and hope you were able to follow it properly. \n\nI will also be ending this article here now, leaving you with resources for further study. \n\n## Resources\n1. [Overviewof connectors for canvas apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections-list)\n2. [Use custom connectors in a Power Apps canvas app](https://docs.microsoft.com/en-us/learn/modules/use-custom-connectors-in-powerapps-canvas-app/)\n3. [Microsoft Dataverse Documentation](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/)\n4. [Use custom connectors with the timeline control](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/custom-connectors-timeline-control)\n\nSo concluding now, in this article we understood what are Data connectors, Popular connectors used in Microsoft Power Apps, Standard and Custom connectors, Connecting to Microsoft Dataverse and finally we had a codelab that taught us how to Connect or Build an app with data gotten from Google Sheet, which is an example of a Standard Connector. \n\nThank You"
+        },
+        {
+          "id": "using-timer-control-input-component-in-power-apps",
+          "metadata": {
+            "permalink": "/blog/using-timer-control-input-component-in-power-apps",
+            "source": "@site/blog/using-timer-control-input-component-in-power-apps/index.md",
+            "title": "Using the Timer Control Input Component in Power Apps",
+            "description": "In this article we will be following up from our previous article Using Data Connectors with Microsoft Power Apps to learn about the Timer Control input component used in Microsoft Power Apps.",
+            "date": "2022-08-19T03:05:06.000Z",
+            "formattedDate": "August 19, 2022",
+            "tags": [
+              {
+                "label": "Power Platform",
+                "permalink": "/blog/tags/power-platform"
+              },
+              {
+                "label": "LowCode",
+                "permalink": "/blog/tags/low-code"
+              },
+              {
+                "label": "Power Pages",
+                "permalink": "/blog/tags/power-pages"
+              },
+              {
+                "label": "Auth",
+                "permalink": "/blog/tags/auth"
+              }
+            ],
+            "readingTime": 3.91,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Favour Adeshina",
+                "title": "Power Platform Advocate",
+                "url": "https://github.com/Favour-dgreat",
+                "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+                "key": "favour"
+              }
+            ],
+            "frontMatter": {
+              "slug": "using-timer-control-input-component-in-power-apps",
+              "title": "Using the Timer Control Input Component in Power Apps",
+              "authors": "favour",
+              "tags": [
+                "Power Platform",
+                "LowCode",
+                "Power Pages",
+                "Auth"
+              ]
+            },
+            "prevItem": {
+              "title": "Using Data Connectors while building Power Apps",
+              "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
+            },
+            "nextItem": {
               "title": "Creating a Node.js web server with Express Framework",
               "permalink": "/blog/Create-a-Node.js-web-server-with-Express-Framework"
             }
           },
-          "content": "This article is for someone who just started writing Go, and have no idea about //go:embed feature which came with the released version: 1.16.\n\nA project I was working on recently led to the discoveries.\n\n<!--truncate-->\n\n## So what is //go:embed?\n\nThe embed package allows us to embed static/template or directories into our Go program\n\n## When should you use //go:embed in your project?\n//go:embed can be used in situations where the file or assets won't change or be modified after build, dont shoot yourself in the leg by embedding files that are subjected to modifications e.g ```config.json``` and all type of files similar to this\n\nexamples of assets that you can use ```//go:embed``` for are ```templates/css``` files and anything similar to this\n\n## How to use it in CLI programs?\n\nIf you are writing your CLI tool using frameworks like cobra, urfave-cli, you will know that your commands files e.g root.go and the likes are alway in a \"cmd\" folder\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n├─ go.mod\n├─ go.sum\n├─ main.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n```\n\nand the rule that comes with //go:embed is that you can only embed via your root folder, so lets say you have your template folder inside your main project folder, just the way my project folder is above\n\nThen you can easily embed using main.go file in your root folder or any other go file in root folder\n\nbut in situation where your template files is needed or called inside your \"cmd\" folder, i need to embed my template from my cmd>>config.go file.\n\nIt becomes tricky from there? you get it right? meaning  //go:embed won't work, it will start spitting errors like ```pattern ****/: no matching files found```\n\nbecause you can only use embed from the root files and now you need to call it from a file inside the \"cmd\" which is not available on the root.\n\ni was stucked man, spent two to three days thinking and searching the internet for solution, pushing my project depends on getting the static/template assets files embed.\n\nNow you probably thinking why dont i move my template folder into the \"cmd\" folder? yes i did that too, but using   ```//go:embed templates/*.html``` wasnt working still\n\nbut at last i stumbled upon https://github.com/plentico/plenti repo, the guy did what i have been trying to do, infact he has lot of static files\n\nbut what he did is different from what every article i have come acrossed did and shared, he used this syntax ```//go:embed all:yourfolders/*``` while other content out there states to use this ```//go:embed yourfolders/*```\n\ndon't get me wrong both ar correct, but ```//go:embed all:yourfolders/*```  works well for embedding from files that are not in root folder, in situations where your folder is like this\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n├─ go.mod\n├─ go.sum\n├─ main.go\n```\n\nand how is i embedthe templates in my config.go\n\n```go title=\"hello_cobra/cmd/config.go\"\npackage cmd\n\nimport (\n\t\"embed\"\n\t\"fmt\"\n\t\"net/http\"\n\t\"text/template\"\n\n\t\"github.com/spf13/cobra\"\n)\n\n//go:embed all:templates/*.html   //this means, embed all files ending with \".html\"  in the templates folder even when ignored\nvar TempFs embed.FS //assign the variable TempFs to embed.FS, FS means (File System)\n\nvar tmpl *template.Template //tmpl is a type pointer to template.Template,\n\n\nfunc init() {\n\trootCmd.AddCommand(configCmd)\n\ttmpl = template.Must(template.ParseFS(TempFs, \"templates/*.html\"))\n}\n\nfunc myTempl(w http.ResponseWriter, _ *http.Request) {\n\n///you can do all your codes here,\n\terr = tmpl.ExecuteTemplate(w, \"creds.html\", nil) //Executing the template\n\tif err != nil {\n\t\tlog.Fatal(\"Error loading index template: \", err) //log an error, if the template cant be started\n\t}\n}\n```\n\nAnd that's all, If you want to learn more about //go:embed read over here <a href=\"https://pkg.go.dev/embed\">here</a>."
+          "content": "In this article we will be following up from our previous article **Using Data Connectors with Microsoft Power Apps** to learn about the Timer Control input component used in Microsoft Power Apps. \n\n<!-- truncate -->\n\n## What is Timer Control in PowerApps?\nTimer Control in PowerApps, is simply an Input Component amongst the Insert tools used for building apps. \n\n![Screenshot 2022-04-23 at 23.20.40.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650752465275/HaJJ1AO--.png)\n\nIt's also a control that can determine how your app responds after a certain amount of time.\n\nTimers can, for example, determine how long a control appears or change other properties of a control after a certain amount of time has passed.\n\n\n### Key Properties for using the Timer Control Component in Power Apps\n\n**Duration** – This is how long a timer runs in milliseconds. The maximum is 24 hours expressed in milliseconds. Default is 60 seconds.\n\n**OnTimerEnd** – This is an actions to perform when a timer finishes running.\n\n**Repeat** – The repeat function determines if a timer automatically restarts when it finishes couting, making use of the set time.\n\n**AutoPause** – This function determines if the timer control automatically pauses, after a user navigates to a different screen.\n\n**AutoStart** – The AutoStart function determines if the timer control automatically starts to play when the user navigates to the screen that contains that control.\n\n**OnSelect** – OnSelect is used to set actions to perform when the user taps or clicks the Timer component.\n\n**OnTimerStart** – OnTimerStart helps a user to set actions to perform when a timer starts to run.\n\n\n# Implementing Timer Control Component \nFollowing up from a previous article, where we built an application using Power Apps, kindly go back to the article before you proceed; [Using Data Connectors with Microsoft Power Apps](https://thecompletehub.tech/understanding-data-connectors-with-microsoft-power-apps). Also, you can check out this video, to understand better, before we proceed:\n\n%[https://www.youtube.com/shorts/sitW9uOeTvg]\n\nNow let us implement our Timer Control Component in our previously built Power App: \n\nGo to Screen 3 **(Our Success Screen)**\n![Screenshot 2022-04-23 at 23.36.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753412047/8xDuLRr3X.png)\n\nClick on the Insert Tool Item and Search for \"Timer\"\n![Screenshot 2022-04-23 at 23.38.06.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753546954/uo87lDPs4.png)\n\nAdd the Timer to Screen3 Components\n\n![Screenshot 2022-04-23 at 23.40.03.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753637767/XaTil-hWw.png)\n\n**Now, we need to set a few parameters for the Timer Component:**\n\nFirstly, is the duration. \n\nYou can specify in milliseconds here. Example: 3000 i.e. 3 seconds\n![Screenshot 2022-04-23 at 23.42.13.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753746393/MRzZPk_pB.png)\n\nNext, you’ll need to set the Start flag. By default, this is set to false. The Start is triggered when the value is set to True. This needs to be dynamically set from elsewhere i.e. in this example, you’ll need to trigger from where you come to this screen so that the Timer starts the countdown.\n\n![Screenshot 2022-04-23 at 23.44.00.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650753870590/sEt69kDsO.png)\n\nNow, the way I set this is, first I create a variable from the place where I want to trigger the Timer to go off, that is my previous Screen (Screen2).  I’m creating and setting a variable called startTimer and setting the value to true:\n\n![Screenshot 2022-04-24 at 00.09.54.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755420667/M5h7eltB1.png)\n\nYou will then return to your Timer Component in Screen3 and set this variable startTimer to the Start property.\n\n![Screenshot 2022-04-23 at 23.53.36.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650754432720/q1AghZ4ve.png)\n\nAlso, you’ll need to set what needs to happen when the Timer ends. So, you have to write the OnTimerEnd property as to what will happen once the Timer ends.\nHere, you’ll Navigate to the 'Screen4’ as per our scenario and then also, set the startTimer flag to ‘false’ since you want to reuse this again for the next submission.\n\nNow this works fine as Screen 4 loads immediately after the duration of the timer is elapsed.\n\nFinally, I will hide the timer component from showing on the screen. \nTo do this I will set the visible property to false. It is set to true by default, and by doing this immediately our timer becomes not visible but still works properly. \n\n\n![Screenshot 2022-04-24 at 00.14.39.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755803020/zV9xntL2b.png)\n\n\n![Screenshot 2022-04-24 at 00.14.52.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755832207/AivDtFZg9.png)\n\nIn conclusion, with this new feature added to our app, we can now remove the previous buttons added to navigate to Screen4 from the Success Screen (Screen3), and this is the new look for Screen 3\n\n![Screenshot 2022-04-24 at 00.19.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650755992913/aB_UqMDol.png)\n\nNow we have improved our app by using the Timer control component to our app. \n\n\nAs said earlier to fully understand everything discussed up till this point, kindly read and understand the previous article on **Using Data Connectors with Microsoft Power Apps** \n\nFinally, I will be ending this article, with helpful resources to aid you learning\n\n## Learning Resources\n\n1. [Timer control in Power Apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/control-timer?WT.mc_id=DX-MVP-5003911)\n2. [Formula reference for Power Apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/formula-reference)\n3. [Get started with formulas in canvas apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/working-with-formulas)\n4. [Controls and properties in canvas apps](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/reference-properties)\n5. [Power Apps Ideas (preview)](https://docs.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas)\n6. [Microsoft's Power Platform - LowCode Platform](https://thecompletehub.tech/microsofts-power-platform-lowcode-platform)"
         },
         {
           "id": "Create-a-Node.js-web-server-with-Express-Framework",
@@ -605,8 +605,8 @@
               ]
             },
             "prevItem": {
-              "title": "Embedding templates and static files in CLI using //go:embed",
-              "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
+              "title": "Using the Timer Control Input Component in Power Apps",
+              "permalink": "/blog/using-timer-control-input-component-in-power-apps"
             },
             "nextItem": {
               "title": "Introduction to Microsoft Power Platform",
@@ -685,10 +685,10 @@
       "blogListPaginated": [
         {
           "items": [
-            "using-timer-control-input-component-in-power-apps",
-            "using-data-connectors-with-microsoft-power-apps",
-            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
             "embedding-static-files-in-cli-with-go-embed",
+            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+            "using-data-connectors-with-microsoft-power-apps",
+            "using-timer-control-input-component-in-power-apps",
             "Create-a-Node.js-web-server-with-Express-Framework",
             "introduction-to-power-platform"
           ],
@@ -704,164 +704,6 @@
         }
       ],
       "blogTags": {
-        "/blog/tags/power-platform": {
-          "label": "Power Platform",
-          "items": [
-            "using-timer-control-input-component-in-power-apps",
-            "using-data-connectors-with-microsoft-power-apps",
-            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
-            "introduction-to-power-platform"
-          ],
-          "permalink": "/blog/tags/power-platform",
-          "pages": [
-            {
-              "items": [
-                "using-timer-control-input-component-in-power-apps",
-                "using-data-connectors-with-microsoft-power-apps",
-                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
-                "introduction-to-power-platform"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/power-platform",
-                "page": 1,
-                "postsPerPage": 4,
-                "totalPages": 1,
-                "totalCount": 4,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/low-code": {
-          "label": "LowCode",
-          "items": [
-            "using-timer-control-input-component-in-power-apps",
-            "using-data-connectors-with-microsoft-power-apps",
-            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
-            "introduction-to-power-platform"
-          ],
-          "permalink": "/blog/tags/low-code",
-          "pages": [
-            {
-              "items": [
-                "using-timer-control-input-component-in-power-apps",
-                "using-data-connectors-with-microsoft-power-apps",
-                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
-                "introduction-to-power-platform"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/low-code",
-                "page": 1,
-                "postsPerPage": 4,
-                "totalPages": 1,
-                "totalCount": 4,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/power-pages": {
-          "label": "Power Pages",
-          "items": [
-            "using-timer-control-input-component-in-power-apps",
-            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
-            "introduction-to-power-platform"
-          ],
-          "permalink": "/blog/tags/power-pages",
-          "pages": [
-            {
-              "items": [
-                "using-timer-control-input-component-in-power-apps",
-                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
-                "introduction-to-power-platform"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/power-pages",
-                "page": 1,
-                "postsPerPage": 3,
-                "totalPages": 1,
-                "totalCount": 3,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/auth": {
-          "label": "Auth",
-          "items": [
-            "using-timer-control-input-component-in-power-apps",
-            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
-          ],
-          "permalink": "/blog/tags/auth",
-          "pages": [
-            {
-              "items": [
-                "using-timer-control-input-component-in-power-apps",
-                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/auth",
-                "page": 1,
-                "postsPerPage": 2,
-                "totalPages": 1,
-                "totalCount": 2,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/power-apps": {
-          "label": "Power Apps",
-          "items": [
-            "using-data-connectors-with-microsoft-power-apps",
-            "introduction-to-power-platform"
-          ],
-          "permalink": "/blog/tags/power-apps",
-          "pages": [
-            {
-              "items": [
-                "using-data-connectors-with-microsoft-power-apps",
-                "introduction-to-power-platform"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/power-apps",
-                "page": 1,
-                "postsPerPage": 2,
-                "totalPages": 1,
-                "totalCount": 2,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/data-connectors": {
-          "label": "Data Connectors",
-          "items": [
-            "using-data-connectors-with-microsoft-power-apps"
-          ],
-          "permalink": "/blog/tags/data-connectors",
-          "pages": [
-            {
-              "items": [
-                "using-data-connectors-with-microsoft-power-apps"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/data-connectors",
-                "page": 1,
-                "postsPerPage": 1,
-                "totalPages": 1,
-                "totalCount": 1,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
         "/blog/tags/golang": {
           "label": "Golang",
           "items": [
@@ -944,6 +786,164 @@
               ],
               "metadata": {
                 "permalink": "/blog/tags/static-files",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/power-platform": {
+          "label": "Power Platform",
+          "items": [
+            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+            "using-data-connectors-with-microsoft-power-apps",
+            "using-timer-control-input-component-in-power-apps",
+            "introduction-to-power-platform"
+          ],
+          "permalink": "/blog/tags/power-platform",
+          "pages": [
+            {
+              "items": [
+                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+                "using-data-connectors-with-microsoft-power-apps",
+                "using-timer-control-input-component-in-power-apps",
+                "introduction-to-power-platform"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/power-platform",
+                "page": 1,
+                "postsPerPage": 4,
+                "totalPages": 1,
+                "totalCount": 4,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/low-code": {
+          "label": "LowCode",
+          "items": [
+            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+            "using-data-connectors-with-microsoft-power-apps",
+            "using-timer-control-input-component-in-power-apps",
+            "introduction-to-power-platform"
+          ],
+          "permalink": "/blog/tags/low-code",
+          "pages": [
+            {
+              "items": [
+                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+                "using-data-connectors-with-microsoft-power-apps",
+                "using-timer-control-input-component-in-power-apps",
+                "introduction-to-power-platform"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/low-code",
+                "page": 1,
+                "postsPerPage": 4,
+                "totalPages": 1,
+                "totalCount": 4,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/power-pages": {
+          "label": "Power Pages",
+          "items": [
+            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+            "using-timer-control-input-component-in-power-apps",
+            "introduction-to-power-platform"
+          ],
+          "permalink": "/blog/tags/power-pages",
+          "pages": [
+            {
+              "items": [
+                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+                "using-timer-control-input-component-in-power-apps",
+                "introduction-to-power-platform"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/power-pages",
+                "page": 1,
+                "postsPerPage": 3,
+                "totalPages": 1,
+                "totalCount": 3,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/auth": {
+          "label": "Auth",
+          "items": [
+            "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+            "using-timer-control-input-component-in-power-apps"
+          ],
+          "permalink": "/blog/tags/auth",
+          "pages": [
+            {
+              "items": [
+                "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
+                "using-timer-control-input-component-in-power-apps"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/auth",
+                "page": 1,
+                "postsPerPage": 2,
+                "totalPages": 1,
+                "totalCount": 2,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/power-apps": {
+          "label": "Power Apps",
+          "items": [
+            "using-data-connectors-with-microsoft-power-apps",
+            "introduction-to-power-platform"
+          ],
+          "permalink": "/blog/tags/power-apps",
+          "pages": [
+            {
+              "items": [
+                "using-data-connectors-with-microsoft-power-apps",
+                "introduction-to-power-platform"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/power-apps",
+                "page": 1,
+                "postsPerPage": 2,
+                "totalPages": 1,
+                "totalCount": 2,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/data-connectors": {
+          "label": "Data Connectors",
+          "items": [
+            "using-data-connectors-with-microsoft-power-apps"
+          ],
+          "permalink": "/blog/tags/data-connectors",
+          "pages": [
+            {
+              "items": [
+                "using-data-connectors-with-microsoft-power-apps"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/data-connectors",
                 "page": 1,
                 "postsPerPage": 1,
                 "totalPages": 1,

@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '2b4'),
+    component: ComponentCreator('/blog', 'bf6'),
     exact: true
   },
   {
@@ -79,7 +79,7 @@ export default [
   },
   {
     path: '/blog/tags/auth',
-    component: ComponentCreator('/blog/tags/auth', '4d1'),
+    component: ComponentCreator('/blog/tags/auth', '07f'),
     exact: true
   },
   {
@@ -114,7 +114,7 @@ export default [
   },
   {
     path: '/blog/tags/low-code',
-    component: ComponentCreator('/blog/tags/low-code', 'a3b'),
+    component: ComponentCreator('/blog/tags/low-code', 'b9b'),
     exact: true
   },
   {
@@ -139,12 +139,12 @@ export default [
   },
   {
     path: '/blog/tags/power-pages',
-    component: ComponentCreator('/blog/tags/power-pages', 'dc4'),
+    component: ComponentCreator('/blog/tags/power-pages', 'b66'),
     exact: true
   },
   {
     path: '/blog/tags/power-platform',
-    component: ComponentCreator('/blog/tags/power-platform', '8e1'),
+    component: ComponentCreator('/blog/tags/power-platform', '895'),
     exact: true
   },
   {

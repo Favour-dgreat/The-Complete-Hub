@@ -37,7 +37,7 @@ Timers can, for example, determine how long a control appears or change other pr
 
 
 # Implementing Timer Control Component 
-Following up from a previous article, where we built an application using Power Apps, kindly go back to the article before you proceed; [Using Data Connectors with Microsoft Power Apps](www.thecompletehub.tech/blog/using-data-connectors-with-microsoft-power-apps). Also, you can check out this video, to understand better, before we proceed:
+Following up from a previous article, where we built an application using Power Apps, kindly go back to the article before you proceed; [Using Data Connectors with Microsoft Power Apps](https://thecompletehub.tech/understanding-data-connectors-with-microsoft-power-apps). Also, you can check out this video, to understand better, before we proceed:
 
 %[https://www.youtube.com/shorts/sitW9uOeTvg]
 
