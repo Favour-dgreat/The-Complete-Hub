@@ -6,7 +6,7 @@
 export default {
   "title": "The Complete Hub - Providing technical and educational resources for developers and tech enthusiasts",
   "tagline": "The Complete Hub (TC Hub) is a startup/community that is committed to providing technical contents for everyone in the Tech Ecosystem, building a community of technical writers, improving documentation, tutorial, and article contents.",
-  "url": "www.thecompletehub.com",
+  "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",

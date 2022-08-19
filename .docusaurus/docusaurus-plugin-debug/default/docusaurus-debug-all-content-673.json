@@ -320,62 +320,6 @@
       "blogSidebarTitle": "All posts",
       "blogPosts": [
         {
-          "id": "embedding-static-files-in-cli-with-go-embed",
-          "metadata": {
-            "permalink": "/blog/embedding-static-files-in-cli-with-go-embed",
-            "source": "@site/blog/How-to-use-go-embed-in-cli-programs/index.md",
-            "title": "Embedding templates and static files in CLI using //go:embed",
-            "description": "This article is for someone who just started writing Go, and have no idea about //go 1.16.",
-            "date": "2022-08-19T03:05:06.000Z",
-            "formattedDate": "August 19, 2022",
-            "tags": [
-              {
-                "label": "Golang",
-                "permalink": "/blog/tags/golang"
-              },
-              {
-                "label": "Go",
-                "permalink": "/blog/tags/go"
-              },
-              {
-                "label": "CLI",
-                "permalink": "/blog/tags/cli"
-              },
-              {
-                "label": "static files",
-                "permalink": "/blog/tags/static-files"
-              }
-            ],
-            "readingTime": 3.14,
-            "hasTruncateMarker": true,
-            "authors": [
-              {
-                "name": "Saintmalik",
-                "title": "Pentester and an AppSec Guy",
-                "url": "https://github.com/saintmalik",
-                "imageURL": "https://avatars.githubusercontent.com/u/37118134?v=4",
-                "key": "malik"
-              }
-            ],
-            "frontMatter": {
-              "slug": "embedding-static-files-in-cli-with-go-embed",
-              "title": "Embedding templates and static files in CLI using //go:embed",
-              "authors": "malik",
-              "tags": [
-                "Golang",
-                "Go",
-                "CLI",
-                "static files"
-              ]
-            },
-            "nextItem": {
-              "title": "Setting up Azure AD B2C for User authentication in Power Pages",
-              "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
-            }
-          },
-          "content": "This article is for someone who just started writing Go, and have no idea about //go:embed feature which came with the released version: 1.16.\n\nA project I was working on recently led to the discoveries.\n\n<!--truncate-->\n\n## So what is //go:embed?\n\nThe embed package allows us to embed static/template or directories into our Go program\n\n## When should you use //go:embed in your project?\n//go:embed can be used in situations where the file or assets won't change or be modified after build, dont shoot yourself in the leg by embedding files that are subjected to modifications e.g ```config.json``` and all type of files similar to this\n\nexamples of assets that you can use ```//go:embed``` for are ```templates/css``` files and anything similar to this\n\n## How to use it in CLI programs?\n\nIf you are writing your CLI tool using frameworks like cobra, urfave-cli, you will know that your commands files e.g root.go and the likes are alway in a \"cmd\" folder\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n├─ go.mod\n├─ go.sum\n├─ main.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n```\n\nand the rule that comes with //go:embed is that you can only embed via your root folder, so lets say you have your template folder inside your main project folder, just the way my project folder is above\n\nThen you can easily embed using main.go file in your root folder or any other go file in root folder\n\nbut in situation where your template files is needed or called inside your \"cmd\" folder, i need to embed my template from my cmd>>config.go file.\n\nIt becomes tricky from there? you get it right? meaning  //go:embed won't work, it will start spitting errors like ```pattern ****/: no matching files found```\n\nbecause you can only use embed from the root files and now you need to call it from a file inside the \"cmd\" which is not available on the root.\n\ni was stucked man, spent two to three days thinking and searching the internet for solution, pushing my project depends on getting the static/template assets files embed.\n\nNow you probably thinking why dont i move my template folder into the \"cmd\" folder? yes i did that too, but using   ```//go:embed templates/*.html``` wasnt working still\n\nbut at last i stumbled upon https://github.com/plentico/plenti repo, the guy did what i have been trying to do, infact he has lot of static files\n\nbut what he did is different from what every article i have come acrossed did and shared, he used this syntax ```//go:embed all:yourfolders/*``` while other content out there states to use this ```//go:embed yourfolders/*```\n\ndon't get me wrong both ar correct, but ```//go:embed all:yourfolders/*```  works well for embedding from files that are not in root folder, in situations where your folder is like this\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n├─ go.mod\n├─ go.sum\n├─ main.go\n```\n\nand how is i embedthe templates in my config.go\n\n```go title=\"hello_cobra/cmd/config.go\"\npackage cmd\n\nimport (\n\t\"embed\"\n\t\"fmt\"\n\t\"net/http\"\n\t\"text/template\"\n\n\t\"github.com/spf13/cobra\"\n)\n\n//go:embed all:templates/*.html   //this means, embed all files ending with \".html\"  in the templates folder even when ignored\nvar TempFs embed.FS //assign the variable TempFs to embed.FS, FS means (File System)\n\nvar tmpl *template.Template //tmpl is a type pointer to template.Template,\n\n\nfunc init() {\n\trootCmd.AddCommand(configCmd)\n\ttmpl = template.Must(template.ParseFS(TempFs, \"templates/*.html\"))\n}\n\nfunc myTempl(w http.ResponseWriter, _ *http.Request) {\n\n///you can do all your codes here,\n\terr = tmpl.ExecuteTemplate(w, \"creds.html\", nil) //Executing the template\n\tif err != nil {\n\t\tlog.Fatal(\"Error loading index template: \", err) //log an error, if the template cant be started\n\t}\n}\n```\n\nAnd that's all, If you want to learn more about //go:embed read over here <a href=\"https://pkg.go.dev/embed\">here</a>."
-        },
-        {
           "id": "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
           "metadata": {
             "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
@@ -423,10 +367,6 @@
                 "Power Pages",
                 "Auth"
               ]
-            },
-            "prevItem": {
-              "title": "Embedding templates and static files in CLI using //go:embed",
-              "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
             },
             "nextItem": {
               "title": "Using Data Connectors while building Power Apps",
@@ -489,11 +429,71 @@
               "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
             },
             "nextItem": {
+              "title": "Embedding templates and static files in CLI using //go:embed",
+              "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
+            }
+          },
+          "content": "Data is very important while building every native application, this is because in every application, it is either you are requesting/fetching data, sending data, or perhaps doing both. And in this article we will be learning more about data and data connectors, and how to make use of them in a Power Apps Project. \n\n<!-- truncate -->\n\n## What are Data Connectors?\nIn very clear terms, \"Data Connectors\" connects or communicates with the data source in every power app. Data is stored in a data source, and you bring that data into your app by creating a connection.\n\nIn Microsoft Power Apps a connector may provide tables of data or actions. Some connectors provide only tables, some provide only actions, and some provide both. Also, your connector may be either a **standard or custom connector**.\n\n\n\n### Popular Connectors used in Microsoft Power Apps\n\n![Screenshot 2022-03-23 at 21.41.16.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648068186548/PpzISxxP8.png)\n\n\n### Standard and Custom Connectors\nStandard Connectors are connectors provided by Power Apps for many commonly used data sources. If Power Apps has a standard connector for the type of data source that you want to use, you should use that connector, those are what are referred to as Standard Custom Connectors.\n\nThe image above showing popular connectors are all Standard Connectors. \n\nBut in a situation where you want to connect to other types of data sources, such as the one you built, then they are referred to as Custom Connectors \n\nCheck out this article for more on  Custom Connectors - [Register and use custom connectors](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/register-custom-api)\n\n\n## Connecting to Microsoft Dataverse\n\nMicrosoft Dataverse lets you securely store and manage data that are used by business applications. \nData within Dataverse is stored within a set of tables. A table is a set of rows (formerly referred to as records) and columns (formerly referred to as fields/attributes). Each column in the table is designed to store a certain type of data, for example, name, age, salary, and so on.\n\nNow with the understanding of the Dataverse let us get into this codelab!\n\n## Building a simple record-keeping app with Google Sheets (a Standard Connector)\n1. [Sign in to Power Apps](https://powerapps.microsoft.com/en-gb/) If you don't already have a Power Apps account, click the Start Free button. \n\n![Screenshot 2022-03-23 at 22.08.09.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648069794826/R9dcIU9gf.png)\n\n2. After successful sign in to Power Apps this is what you should have now! \n\n![Screenshot 2022-03-23 at 22.06.26.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648070361469/Nw9BDRTVW.png) \nClick on the Dataverse card. \n\n3. You should have this screen now, showing previous connections. Then you click on New Connection\n\n![Screenshot 2022-03-23 at 22.44.33.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648071904563/nF1IbpMyF.png)\n\n4. If you followed the previous step properly, you should have this now, then click on Google Sheets and authenticate with your Google account. \n\n![Screenshot 2022-03-23 at 22.49.21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072193448/xuF2XoCxq.png)\nNow you choose a dataset, from a set of previous google sheet documents or perhaps you search for the one you have in mind just as I have done here. \n\n5. The next option is to choose a table or create a new one. \n\n![Screenshot 2022-03-23 at 22.50.57.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072298364/RbnL3xXvZ.png)\n\n6. And finally you should have a very simple app for you with the data from the table you chose or created. Just as I have here too. \n\n![Screenshot 2022-03-23 at 22.52.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072410585/B6m12frDk.png)\n\nThat is the end of this codelab and hope you were able to follow it properly. \n\nI will also be ending this article here now, leaving you with resources for further study. \n\n## Resources\n1. [Overviewof connectors for canvas apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections-list)\n2. [Use custom connectors in a Power Apps canvas app](https://docs.microsoft.com/en-us/learn/modules/use-custom-connectors-in-powerapps-canvas-app/)\n3. [Microsoft Dataverse Documentation](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/)\n4. [Use custom connectors with the timeline control](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/custom-connectors-timeline-control)\n\nSo concluding now, in this article we understood what are Data connectors, Popular connectors used in Microsoft Power Apps, Standard and Custom connectors, Connecting to Microsoft Dataverse and finally we had a codelab that taught us how to Connect or Build an app with data gotten from Google Sheet, which is an example of a Standard Connector. \n\nThank You"
+        },
+        {
+          "id": "embedding-static-files-in-cli-with-go-embed",
+          "metadata": {
+            "permalink": "/blog/embedding-static-files-in-cli-with-go-embed",
+            "source": "@site/blog/How-to-use-go-embed-in-cli-programs/index.md",
+            "title": "Embedding templates and static files in CLI using //go:embed",
+            "description": "This article is for someone who just started writing Go, and have no idea about //go 1.16.",
+            "date": "2022-08-19T03:05:06.000Z",
+            "formattedDate": "August 19, 2022",
+            "tags": [
+              {
+                "label": "Golang",
+                "permalink": "/blog/tags/golang"
+              },
+              {
+                "label": "Go",
+                "permalink": "/blog/tags/go"
+              },
+              {
+                "label": "CLI",
+                "permalink": "/blog/tags/cli"
+              },
+              {
+                "label": "static files",
+                "permalink": "/blog/tags/static-files"
+              }
+            ],
+            "readingTime": 3.14,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Saintmalik",
+                "title": "Pentester and an AppSec Guy",
+                "url": "https://github.com/saintmalik",
+                "imageURL": "https://avatars.githubusercontent.com/u/37118134?v=4",
+                "key": "malik"
+              }
+            ],
+            "frontMatter": {
+              "slug": "embedding-static-files-in-cli-with-go-embed",
+              "title": "Embedding templates and static files in CLI using //go:embed",
+              "authors": "malik",
+              "tags": [
+                "Golang",
+                "Go",
+                "CLI",
+                "static files"
+              ]
+            },
+            "prevItem": {
+              "title": "Using Data Connectors while building Power Apps",
+              "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
+            },
+            "nextItem": {
               "title": "Using the Timer Control Input Component in Power Apps",
               "permalink": "/blog/using-timer-control-input-component-in-power-apps"
             }
           },
-          "content": "Data is very important while building every native application, this is because in every application, it is either you are requesting/fetching data, sending data, or perhaps doing both. And in this article we will be learning more about data and data connectors, and how to make use of them in a Power Apps Project. \n\n<!-- truncate -->\n\n## What are Data Connectors?\nIn very clear terms, \"Data Connectors\" connects or communicates with the data source in every power app. Data is stored in a data source, and you bring that data into your app by creating a connection.\n\nIn Microsoft Power Apps a connector may provide tables of data or actions. Some connectors provide only tables, some provide only actions, and some provide both. Also, your connector may be either a **standard or custom connector**.\n\n\n\n### Popular Connectors used in Microsoft Power Apps\n\n![Screenshot 2022-03-23 at 21.41.16.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648068186548/PpzISxxP8.png)\n\n\n### Standard and Custom Connectors\nStandard Connectors are connectors provided by Power Apps for many commonly used data sources. If Power Apps has a standard connector for the type of data source that you want to use, you should use that connector, those are what are referred to as Standard Custom Connectors.\n\nThe image above showing popular connectors are all Standard Connectors. \n\nBut in a situation where you want to connect to other types of data sources, such as the one you built, then they are referred to as Custom Connectors \n\nCheck out this article for more on  Custom Connectors - [Register and use custom connectors](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/register-custom-api)\n\n\n## Connecting to Microsoft Dataverse\n\nMicrosoft Dataverse lets you securely store and manage data that are used by business applications. \nData within Dataverse is stored within a set of tables. A table is a set of rows (formerly referred to as records) and columns (formerly referred to as fields/attributes). Each column in the table is designed to store a certain type of data, for example, name, age, salary, and so on.\n\nNow with the understanding of the Dataverse let us get into this codelab!\n\n## Building a simple record-keeping app with Google Sheets (a Standard Connector)\n1. [Sign in to Power Apps](https://powerapps.microsoft.com/en-gb/) If you don't already have a Power Apps account, click the Start Free button. \n\n![Screenshot 2022-03-23 at 22.08.09.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648069794826/R9dcIU9gf.png)\n\n2. After successful sign in to Power Apps this is what you should have now! \n\n![Screenshot 2022-03-23 at 22.06.26.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648070361469/Nw9BDRTVW.png) \nClick on the Dataverse card. \n\n3. You should have this screen now, showing previous connections. Then you click on New Connection\n\n![Screenshot 2022-03-23 at 22.44.33.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648071904563/nF1IbpMyF.png)\n\n4. If you followed the previous step properly, you should have this now, then click on Google Sheets and authenticate with your Google account. \n\n![Screenshot 2022-03-23 at 22.49.21.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072193448/xuF2XoCxq.png)\nNow you choose a dataset, from a set of previous google sheet documents or perhaps you search for the one you have in mind just as I have done here. \n\n5. The next option is to choose a table or create a new one. \n\n![Screenshot 2022-03-23 at 22.50.57.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072298364/RbnL3xXvZ.png)\n\n6. And finally you should have a very simple app for you with the data from the table you chose or created. Just as I have here too. \n\n![Screenshot 2022-03-23 at 22.52.24.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648072410585/B6m12frDk.png)\n\nThat is the end of this codelab and hope you were able to follow it properly. \n\nI will also be ending this article here now, leaving you with resources for further study. \n\n## Resources\n1. [Overviewof connectors for canvas apps](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/connections-list)\n2. [Use custom connectors in a Power Apps canvas app](https://docs.microsoft.com/en-us/learn/modules/use-custom-connectors-in-powerapps-canvas-app/)\n3. [Microsoft Dataverse Documentation](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/)\n4. [Use custom connectors with the timeline control](https://docs.microsoft.com/en-us/powerapps/maker/model-driven-apps/custom-connectors-timeline-control)\n\nSo concluding now, in this article we understood what are Data connectors, Popular connectors used in Microsoft Power Apps, Standard and Custom connectors, Connecting to Microsoft Dataverse and finally we had a codelab that taught us how to Connect or Build an app with data gotten from Google Sheet, which is an example of a Standard Connector. \n\nThank You"
+          "content": "This article is for someone who just started writing Go, and have no idea about //go:embed feature which came with the released version: 1.16.\n\nA project I was working on recently led to the discoveries.\n\n<!--truncate-->\n\n## So what is //go:embed?\n\nThe embed package allows us to embed static/template or directories into our Go program\n\n## When should you use //go:embed in your project?\n//go:embed can be used in situations where the file or assets won't change or be modified after build, dont shoot yourself in the leg by embedding files that are subjected to modifications e.g ```config.json``` and all type of files similar to this\n\nexamples of assets that you can use ```//go:embed``` for are ```templates/css``` files and anything similar to this\n\n## How to use it in CLI programs?\n\nIf you are writing your CLI tool using frameworks like cobra, urfave-cli, you will know that your commands files e.g root.go and the likes are alway in a \"cmd\" folder\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n├─ go.mod\n├─ go.sum\n├─ main.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n```\n\nand the rule that comes with //go:embed is that you can only embed via your root folder, so lets say you have your template folder inside your main project folder, just the way my project folder is above\n\nThen you can easily embed using main.go file in your root folder or any other go file in root folder\n\nbut in situation where your template files is needed or called inside your \"cmd\" folder, i need to embed my template from my cmd>>config.go file.\n\nIt becomes tricky from there? you get it right? meaning  //go:embed won't work, it will start spitting errors like ```pattern ****/: no matching files found```\n\nbecause you can only use embed from the root files and now you need to call it from a file inside the \"cmd\" which is not available on the root.\n\ni was stucked man, spent two to three days thinking and searching the internet for solution, pushing my project depends on getting the static/template assets files embed.\n\nNow you probably thinking why dont i move my template folder into the \"cmd\" folder? yes i did that too, but using   ```//go:embed templates/*.html``` wasnt working still\n\nbut at last i stumbled upon https://github.com/plentico/plenti repo, the guy did what i have been trying to do, infact he has lot of static files\n\nbut what he did is different from what every article i have come acrossed did and shared, he used this syntax ```//go:embed all:yourfolders/*``` while other content out there states to use this ```//go:embed yourfolders/*```\n\ndon't get me wrong both ar correct, but ```//go:embed all:yourfolders/*```  works well for embedding from files that are not in root folder, in situations where your folder is like this\n\n```mdx\nhello_cobra\n├─ cmd\n│  ├─ config.go\n│  ├─ root.go\n│  └─ run.go\n└─ templates\n   ├─ config.html\n   ├─ creds.html\n   └─ index.html\n├─ go.mod\n├─ go.sum\n├─ main.go\n```\n\nand how is i embedthe templates in my config.go\n\n```go title=\"hello_cobra/cmd/config.go\"\npackage cmd\n\nimport (\n\t\"embed\"\n\t\"fmt\"\n\t\"net/http\"\n\t\"text/template\"\n\n\t\"github.com/spf13/cobra\"\n)\n\n//go:embed all:templates/*.html   //this means, embed all files ending with \".html\"  in the templates folder even when ignored\nvar TempFs embed.FS //assign the variable TempFs to embed.FS, FS means (File System)\n\nvar tmpl *template.Template //tmpl is a type pointer to template.Template,\n\n\nfunc init() {\n\trootCmd.AddCommand(configCmd)\n\ttmpl = template.Must(template.ParseFS(TempFs, \"templates/*.html\"))\n}\n\nfunc myTempl(w http.ResponseWriter, _ *http.Request) {\n\n///you can do all your codes here,\n\terr = tmpl.ExecuteTemplate(w, \"creds.html\", nil) //Executing the template\n\tif err != nil {\n\t\tlog.Fatal(\"Error loading index template: \", err) //log an error, if the template cant be started\n\t}\n}\n```\n\nAnd that's all, If you want to learn more about //go:embed read over here <a href=\"https://pkg.go.dev/embed\">here</a>."
         },
         {
           "id": "using-timer-control-input-component-in-power-apps",
@@ -545,8 +545,8 @@
               ]
             },
             "prevItem": {
-              "title": "Using Data Connectors while building Power Apps",
-              "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
+              "title": "Embedding templates and static files in CLI using //go:embed",
+              "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
             },
             "nextItem": {
               "title": "Creating a Node.js web server with Express Framework",
@@ -685,9 +685,9 @@
       "blogListPaginated": [
         {
           "items": [
-            "embedding-static-files-in-cli-with-go-embed",
             "setting-up-azure-AD-B2C-for-user-auth-in-power-pages",
             "using-data-connectors-with-microsoft-power-apps",
+            "embedding-static-files-in-cli-with-go-embed",
             "using-timer-control-input-component-in-power-apps",
             "Create-a-Node.js-web-server-with-Express-Framework",
             "introduction-to-power-platform"
@@ -704,98 +704,6 @@
         }
       ],
       "blogTags": {
-        "/blog/tags/golang": {
-          "label": "Golang",
-          "items": [
-            "embedding-static-files-in-cli-with-go-embed"
-          ],
-          "permalink": "/blog/tags/golang",
-          "pages": [
-            {
-              "items": [
-                "embedding-static-files-in-cli-with-go-embed"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/golang",
-                "page": 1,
-                "postsPerPage": 1,
-                "totalPages": 1,
-                "totalCount": 1,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/go": {
-          "label": "Go",
-          "items": [
-            "embedding-static-files-in-cli-with-go-embed"
-          ],
-          "permalink": "/blog/tags/go",
-          "pages": [
-            {
-              "items": [
-                "embedding-static-files-in-cli-with-go-embed"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/go",
-                "page": 1,
-                "postsPerPage": 1,
-                "totalPages": 1,
-                "totalCount": 1,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/cli": {
-          "label": "CLI",
-          "items": [
-            "embedding-static-files-in-cli-with-go-embed"
-          ],
-          "permalink": "/blog/tags/cli",
-          "pages": [
-            {
-              "items": [
-                "embedding-static-files-in-cli-with-go-embed"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/cli",
-                "page": 1,
-                "postsPerPage": 1,
-                "totalPages": 1,
-                "totalCount": 1,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
-        "/blog/tags/static-files": {
-          "label": "static files",
-          "items": [
-            "embedding-static-files-in-cli-with-go-embed"
-          ],
-          "permalink": "/blog/tags/static-files",
-          "pages": [
-            {
-              "items": [
-                "embedding-static-files-in-cli-with-go-embed"
-              ],
-              "metadata": {
-                "permalink": "/blog/tags/static-files",
-                "page": 1,
-                "postsPerPage": 1,
-                "totalPages": 1,
-                "totalCount": 1,
-                "blogDescription": "Blog",
-                "blogTitle": "Blog"
-              }
-            }
-          ]
-        },
         "/blog/tags/power-platform": {
           "label": "Power Platform",
           "items": [
@@ -944,6 +852,98 @@
               ],
               "metadata": {
                 "permalink": "/blog/tags/data-connectors",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/golang": {
+          "label": "Golang",
+          "items": [
+            "embedding-static-files-in-cli-with-go-embed"
+          ],
+          "permalink": "/blog/tags/golang",
+          "pages": [
+            {
+              "items": [
+                "embedding-static-files-in-cli-with-go-embed"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/golang",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/go": {
+          "label": "Go",
+          "items": [
+            "embedding-static-files-in-cli-with-go-embed"
+          ],
+          "permalink": "/blog/tags/go",
+          "pages": [
+            {
+              "items": [
+                "embedding-static-files-in-cli-with-go-embed"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/go",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/cli": {
+          "label": "CLI",
+          "items": [
+            "embedding-static-files-in-cli-with-go-embed"
+          ],
+          "permalink": "/blog/tags/cli",
+          "pages": [
+            {
+              "items": [
+                "embedding-static-files-in-cli-with-go-embed"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/cli",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/static-files": {
+          "label": "static files",
+          "items": [
+            "embedding-static-files-in-cli-with-go-embed"
+          ],
+          "permalink": "/blog/tags/static-files",
+          "pages": [
+            {
+              "items": [
+                "embedding-static-files-in-cli-with-go-embed"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/static-files",
                 "page": 1,
                 "postsPerPage": 1,
                 "totalPages": 1,
