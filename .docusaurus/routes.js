@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '835'),
+    component: ComponentCreator('/blog', 'bf6'),
     exact: true
   },
   {

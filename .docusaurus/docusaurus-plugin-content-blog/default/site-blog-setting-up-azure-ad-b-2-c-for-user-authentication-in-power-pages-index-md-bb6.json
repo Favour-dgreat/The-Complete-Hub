@@ -45,6 +45,10 @@
       "Auth"
     ]
   },
+  "prevItem": {
+    "title": "Embedding templates and static files in CLI using //go:embed",
+    "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
+  },
   "nextItem": {
     "title": "Using Data Connectors while building Power Apps",
     "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"

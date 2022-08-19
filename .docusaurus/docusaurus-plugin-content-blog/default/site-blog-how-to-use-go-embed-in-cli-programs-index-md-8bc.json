@@ -45,12 +45,8 @@
       "static files"
     ]
   },
-  "prevItem": {
-    "title": "Using Data Connectors while building Power Apps",
-    "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
-  },
   "nextItem": {
-    "title": "Using the Timer Control Input Component in Power Apps",
-    "permalink": "/blog/using-timer-control-input-component-in-power-apps"
+    "title": "Setting up Azure AD B2C for User authentication in Power Pages",
+    "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
   }
 }

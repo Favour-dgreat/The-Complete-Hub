@@ -53,7 +53,7 @@ function HomepageHeader() {
     </Alert>
 
     
-    <h3 className='text-info text-center bg-dark' style={{padding:30,textAlign: "center", backgroundColor: "black"}}>At TC Hub, we are redefining technical writing: <span className='text-info fw-bold' style={{fontStyle: 'italic', color: "#36CCF5"}}>and we believe that the best way to improve in technical writing is to continue/start writing .</span></h3>
+    <h3 className='text-info text-center bg-dark' style={{padding:30,textAlign: "center", backgroundColor: "black"}}>At TC Hub, we are redefining technical writing: <span className='text-info fw-bold' style={{fontStyle: 'italic', color: "#36CCF5"}}>we believe that the best way to improve in technical writing is to continue/start writing .</span></h3>
     {/* <h4 className='text-primary text-center bg-light' >Pushing out African contents to the world</h4> */}
     <CardGroup style={{padding:20}}>
       <Card className='bg-secondary text-light' style={{padding:20}}>

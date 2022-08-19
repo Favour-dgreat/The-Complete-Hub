@@ -49,7 +49,7 @@
     },
     "config": "config---author-author-5-e-9-a94"
   },
-  "/blog-835": {
+  "/blog-bf6": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
@@ -57,13 +57,13 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
+        "content": "content---blogcc-7-c5e"
+      },
+      {
         "content": "content---blog-5-f-6-b42"
       },
       {
         "content": "content---blog-4-fd-9f1"
-      },
-      {
-        "content": "content---blogcc-7-c5e"
       },
       {
         "content": "content---blogd-3-f-39c"
