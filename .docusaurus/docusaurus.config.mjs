@@ -10,7 +10,7 @@ export default {
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
-  "favicon": "img/favicon.ico",
+  "favicon": "./img/favicon.ico",
   "organizationName": "The Complete Hub",
   "projectName": "The Complete Hub",
   "presets": [
