@@ -143,7 +143,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} The Complete Hub | Redefining technical writing`,
+        copyright: `Copyright © ${new Date().getFullYear()} The Complete Hub | All Rights Reserved`,
       },
    
       prism: {

@@ -86,7 +86,7 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "copyright": "Copyright © 2022 The Complete Hub | Redefining technical writing",
+      "copyright": "Copyright © 2022 The Complete Hub | All Rights Reserved",
       "links": []
     },
     "prism": {
