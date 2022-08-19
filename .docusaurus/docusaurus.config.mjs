@@ -13,14 +13,6 @@ export default {
   "favicon": "img/favicon.ico",
   "organizationName": "The Complete Hub",
   "projectName": "The Complete Hub",
-  "i18n": {
-    "defaultLocale": "en",
-    "locales": [
-      "en"
-    ],
-    "path": "i18n",
-    "localeConfigs": {}
-  },
   "presets": [
     [
       "classic",
@@ -308,6 +300,14 @@ export default {
     }
   },
   "baseUrlIssueBanner": true,
+  "i18n": {
+    "defaultLocale": "en",
+    "path": "i18n",
+    "locales": [
+      "en"
+    ],
+    "localeConfigs": {}
+  },
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
     "static"
