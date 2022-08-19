@@ -1,5 +1,55 @@
 [
   {
+    "label": "Power Platform",
+    "permalink": "/blog/tags/power-platform",
+    "count": 4
+  },
+  {
+    "label": "LowCode",
+    "permalink": "/blog/tags/low-code",
+    "count": 4
+  },
+  {
+    "label": "Power Pages",
+    "permalink": "/blog/tags/power-pages",
+    "count": 3
+  },
+  {
+    "label": "Auth",
+    "permalink": "/blog/tags/auth",
+    "count": 2
+  },
+  {
+    "label": "Power Apps",
+    "permalink": "/blog/tags/power-apps",
+    "count": 2
+  },
+  {
+    "label": "Data Connectors",
+    "permalink": "/blog/tags/data-connectors",
+    "count": 1
+  },
+  {
+    "label": "Golang",
+    "permalink": "/blog/tags/golang",
+    "count": 1
+  },
+  {
+    "label": "Go",
+    "permalink": "/blog/tags/go",
+    "count": 1
+  },
+  {
+    "label": "CLI",
+    "permalink": "/blog/tags/cli",
+    "count": 1
+  },
+  {
+    "label": "static files",
+    "permalink": "/blog/tags/static-files",
+    "count": 1
+  },
+  {
     "label": "Node.js",
     "permalink": "/blog/tags/node-js",
     "count": 1
@@ -20,26 +70,6 @@
     "count": 1
   },
   {
-    "label": "Power Platform",
-    "permalink": "/blog/tags/power-platform",
-    "count": 1
-  },
-  {
-    "label": "LowCode",
-    "permalink": "/blog/tags/low-code",
-    "count": 1
-  },
-  {
-    "label": "Power Pages",
-    "permalink": "/blog/tags/power-pages",
-    "count": 1
-  },
-  {
-    "label": "Power Apps",
-    "permalink": "/blog/tags/power-apps",
-    "count": 1
-  },
-  {
     "label": "Power Automate",
     "permalink": "/blog/tags/power-automate",
     "count": 1
@@ -47,21 +77,6 @@
   {
     "label": "Power BI",
     "permalink": "/blog/tags/power-bi",
-    "count": 1
-  },
-  {
-    "label": "docusaurus",
-    "permalink": "/blog/tags/docusaurus",
-    "count": 3
-  },
-  {
-    "label": "hello",
-    "permalink": "/blog/tags/hello",
-    "count": 1
-  },
-  {
-    "label": "hola",
-    "permalink": "/blog/tags/hola",
     "count": 1
   }
 ]

@@ -27,7 +27,7 @@
   "hasTruncateMarker": true,
   "authors": [
     {
-      "name": "Jesse Oluwadamilare",
+      "name": "Jesse Oluwadare",
       "title": "JavaScript Developer",
       "url": "https://github.com/jesse-crypted",
       "imageURL": "https://avatars.githubusercontent.com/u/98085822?v=4",
@@ -44,6 +44,10 @@
       "express",
       "Web server"
     ]
+  },
+  "prevItem": {
+    "title": "Embedding templates and static files in CLI using //go:embed",
+    "permalink": "/blog/embedding-static-files-in-cli-with-go-embed"
   },
   "nextItem": {
     "title": "Introduction to Microsoft Power Platform",

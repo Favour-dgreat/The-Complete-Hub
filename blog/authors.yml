@@ -23,7 +23,13 @@ favour:
   image_url: https://avatars.githubusercontent.com/u/53022031?v=4
 
 jesse: 
-  name: Jesse Oluwadamilare
+  name: Jesse Oluwadare
   title: JavaScript Developer
   url: https://github.com/jesse-crypted
   image_url: https://avatars.githubusercontent.com/u/98085822?v=4
+
+malik:
+  name: Saintmalik
+  title: Pentester and an AppSec Guy
+  url: https://github.com/saintmalik
+  image_url: https://avatars.githubusercontent.com/u/37118134?v=4

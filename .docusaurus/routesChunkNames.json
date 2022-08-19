@@ -49,7 +49,7 @@
     },
     "config": "config---author-author-5-e-9-a94"
   },
-  "/blog-558": {
+  "/blog-2b4": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
@@ -57,19 +57,22 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
+        "content": "content---blogd-3-f-39c"
+      },
+      {
+        "content": "content---blog-4-fd-9f1"
+      },
+      {
+        "content": "content---blog-5-f-6-b42"
+      },
+      {
+        "content": "content---blogcc-7-c5e"
+      },
+      {
         "content": "content---blog-9-f-2-b9c"
       },
       {
         "content": "content---blogbcf-0e6"
-      },
-      {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
       }
     ],
     "metadata": "metadata---blogb-2-b-df1"
@@ -89,13 +92,13 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-create-a-node-js-web-server-with-express-frameworkeb-3-e28"
   },
-  "/blog/first-blog-post-66c": {
+  "/blog/embedding-static-files-in-cli-with-go-embed-5c1": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-first-blog-poste-27-4a1"
+    "content": "content---blog-embedding-static-files-in-cli-with-go-embed-8-bc-57e"
   },
   "/blog/introduction-to-power-platform-d05": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
@@ -105,21 +108,13 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-introduction-to-power-platformb-43-17f"
   },
-  "/blog/long-blog-post-352": {
+  "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages-118": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-long-blog-post-736-bc7"
-  },
-  "/blog/mdx-blog-post-fa1": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "plugin": "plugin---blog-593-1d4"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-mdx-blog-post-593-37b"
+    "content": "content---blog-setting-up-azure-ad-b-2-c-for-user-auth-in-power-pagesbb-6-998"
   },
   "/blog/tags-78c": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
@@ -128,6 +123,23 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/auth-4d1": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogd-3-f-39c"
+      },
+      {
+        "content": "content---blog-5-f-6-b42"
+      }
+    ],
+    "tag": "tag---blog-tags-authb-85-dda",
+    "listMetadata": "listMetadata---blog-tags-auth-53-e-339"
   },
   "/blog/tags/backend-development-9a5": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -143,7 +155,7 @@
     "tag": "tag---blog-tags-backend-development-69-c-2d2",
     "listMetadata": "listMetadata---blog-tags-backend-development-7-aa-b47"
   },
-  "/blog/tags/docusaurus-942": {
+  "/blog/tags/cli-fe7": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
@@ -151,17 +163,25 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
+        "content": "content---blogcc-7-c5e"
       }
     ],
-    "tag": "tag---blog-tags-docusaurusa-80-728",
-    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
+    "tag": "tag---blog-tags-clie-6-c-a61",
+    "listMetadata": "listMetadata---blog-tags-cli-6-c-6-24c"
+  },
+  "/blog/tags/data-connectors-10a": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-4-fd-9f1"
+      }
+    ],
+    "tag": "tag---blog-tags-data-connectors-452-d7c",
+    "listMetadata": "listMetadata---blog-tags-data-connectorse-15-0d0"
   },
   "/blog/tags/express-3fe": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -177,7 +197,7 @@
     "tag": "tag---blog-tags-expressbc-5-8d7",
     "listMetadata": "listMetadata---blog-tags-expressf-52-a05"
   },
-  "/blog/tags/hello-b21": {
+  "/blog/tags/go-aab": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
@@ -185,13 +205,13 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blog-871-381"
+        "content": "content---blogcc-7-c5e"
       }
     ],
-    "tag": "tag---blog-tags-hello-30-a-bed",
-    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
+    "tag": "tag---blog-tags-gofc-3-e51",
+    "listMetadata": "listMetadata---blog-tags-gocce-224"
   },
-  "/blog/tags/hola-9dd": {
+  "/blog/tags/golang-b74": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
@@ -199,19 +219,28 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blog-925-e00"
+        "content": "content---blogcc-7-c5e"
       }
     ],
-    "tag": "tag---blog-tags-holae-16-18a",
-    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
+    "tag": "tag---blog-tags-golang-00-b-a67",
+    "listMetadata": "listMetadata---blog-tags-golangcc-5-1b8"
   },
-  "/blog/tags/low-code-e06": {
+  "/blog/tags/low-code-a3b": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blogd-3-f-39c"
+      },
+      {
+        "content": "content---blog-4-fd-9f1"
+      },
+      {
+        "content": "content---blog-5-f-6-b42"
+      },
       {
         "content": "content---blogbcf-0e6"
       }
@@ -233,13 +262,16 @@
     "tag": "tag---blog-tags-node-jscc-6-f8c",
     "listMetadata": "listMetadata---blog-tags-node-js-3-a-5-023"
   },
-  "/blog/tags/power-apps-b68": {
+  "/blog/tags/power-apps-bd9": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blog-4-fd-9f1"
+      },
       {
         "content": "content---blogbcf-0e6"
       }
@@ -275,13 +307,19 @@
     "tag": "tag---blog-tags-power-bi-895-4df",
     "listMetadata": "listMetadata---blog-tags-power-bi-4-b-6-226"
   },
-  "/blog/tags/power-pages-4d6": {
+  "/blog/tags/power-pages-dc4": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blogd-3-f-39c"
+      },
+      {
+        "content": "content---blog-5-f-6-b42"
+      },
       {
         "content": "content---blogbcf-0e6"
       }
@@ -289,7 +327,7 @@
     "tag": "tag---blog-tags-power-pages-101-5ae",
     "listMetadata": "listMetadata---blog-tags-power-pages-11-c-232"
   },
-  "/blog/tags/power-platform-268": {
+  "/blog/tags/power-platform-8e1": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
@@ -297,11 +335,34 @@
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
+        "content": "content---blogd-3-f-39c"
+      },
+      {
+        "content": "content---blog-4-fd-9f1"
+      },
+      {
+        "content": "content---blog-5-f-6-b42"
+      },
+      {
         "content": "content---blogbcf-0e6"
       }
     ],
     "tag": "tag---blog-tags-power-platforme-65-2ca",
     "listMetadata": "listMetadata---blog-tags-power-platform-22-d-392"
+  },
+  "/blog/tags/static-files-44c": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogcc-7-c5e"
+      }
+    ],
+    "tag": "tag---blog-tags-static-files-79-e-cb6",
+    "listMetadata": "listMetadata---blog-tags-static-files-23-f-238"
   },
   "/blog/tags/web-server-c46": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -316,6 +377,22 @@
     ],
     "tag": "tag---blog-tags-web-server-29-e-88c",
     "listMetadata": "listMetadata---blog-tags-web-serverdd-7-382"
+  },
+  "/blog/using-data-connectors-with-microsoft-power-apps-0ab": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-using-data-connectors-with-microsoft-power-appsaff-6f5"
+  },
+  "/blog/using-timer-control-input-component-in-power-apps-65a": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-using-timer-control-input-component-in-power-appsddd-0fa"
   },
   "/markdown-page-7bf": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",

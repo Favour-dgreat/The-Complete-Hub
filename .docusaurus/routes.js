@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '558'),
+    component: ComponentCreator('/blog', '2b4'),
     exact: true
   },
   {
@@ -58,8 +58,8 @@ export default [
     exact: true
   },
   {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '66c'),
+    path: '/blog/embedding-static-files-in-cli-with-go-embed',
+    component: ComponentCreator('/blog/embedding-static-files-in-cli-with-go-embed', '5c1'),
     exact: true
   },
   {
@@ -68,13 +68,8 @@ export default [
     exact: true
   },
   {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '352'),
-    exact: true
-  },
-  {
-    path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'fa1'),
+    path: '/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages',
+    component: ComponentCreator('/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages', '118'),
     exact: true
   },
   {
@@ -83,13 +78,23 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/auth',
+    component: ComponentCreator('/blog/tags/auth', '4d1'),
+    exact: true
+  },
+  {
     path: '/blog/tags/backend-development',
     component: ComponentCreator('/blog/tags/backend-development', '9a5'),
     exact: true
   },
   {
-    path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '942'),
+    path: '/blog/tags/cli',
+    component: ComponentCreator('/blog/tags/cli', 'fe7'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/data-connectors',
+    component: ComponentCreator('/blog/tags/data-connectors', '10a'),
     exact: true
   },
   {
@@ -98,18 +103,18 @@ export default [
     exact: true
   },
   {
-    path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', 'b21'),
+    path: '/blog/tags/go',
+    component: ComponentCreator('/blog/tags/go', 'aab'),
     exact: true
   },
   {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '9dd'),
+    path: '/blog/tags/golang',
+    component: ComponentCreator('/blog/tags/golang', 'b74'),
     exact: true
   },
   {
     path: '/blog/tags/low-code',
-    component: ComponentCreator('/blog/tags/low-code', 'e06'),
+    component: ComponentCreator('/blog/tags/low-code', 'a3b'),
     exact: true
   },
   {
@@ -119,7 +124,7 @@ export default [
   },
   {
     path: '/blog/tags/power-apps',
-    component: ComponentCreator('/blog/tags/power-apps', 'b68'),
+    component: ComponentCreator('/blog/tags/power-apps', 'bd9'),
     exact: true
   },
   {
@@ -134,17 +139,32 @@ export default [
   },
   {
     path: '/blog/tags/power-pages',
-    component: ComponentCreator('/blog/tags/power-pages', '4d6'),
+    component: ComponentCreator('/blog/tags/power-pages', 'dc4'),
     exact: true
   },
   {
     path: '/blog/tags/power-platform',
-    component: ComponentCreator('/blog/tags/power-platform', '268'),
+    component: ComponentCreator('/blog/tags/power-platform', '8e1'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/static-files',
+    component: ComponentCreator('/blog/tags/static-files', '44c'),
     exact: true
   },
   {
     path: '/blog/tags/web-server',
     component: ComponentCreator('/blog/tags/web-server', 'c46'),
+    exact: true
+  },
+  {
+    path: '/blog/using-data-connectors-with-microsoft-power-apps',
+    component: ComponentCreator('/blog/using-data-connectors-with-microsoft-power-apps', '0ab'),
+    exact: true
+  },
+  {
+    path: '/blog/using-timer-control-input-component-in-power-apps',
+    component: ComponentCreator('/blog/using-timer-control-input-component-in-power-apps', '65a'),
     exact: true
   },
   {

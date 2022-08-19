@@ -1,0 +1,56 @@
+{
+  "permalink": "/blog/using-data-connectors-with-microsoft-power-apps",
+  "source": "@site/blog/Using-data-connectors-with-power-apps/index.md",
+  "title": "Using Data Connectors while building Power Apps",
+  "description": "Data is very important while building every native application, this is because in every application, it is either you are requesting/fetching data, sending data, or perhaps doing both. And in this article we will be learning more about data and data connectors, and how to make use of them in a Power Apps Project.",
+  "date": "2022-08-19T02:00:19.672Z",
+  "formattedDate": "August 19, 2022",
+  "tags": [
+    {
+      "label": "Power Platform",
+      "permalink": "/blog/tags/power-platform"
+    },
+    {
+      "label": "LowCode",
+      "permalink": "/blog/tags/low-code"
+    },
+    {
+      "label": "Power Apps",
+      "permalink": "/blog/tags/power-apps"
+    },
+    {
+      "label": "Data Connectors",
+      "permalink": "/blog/tags/data-connectors"
+    }
+  ],
+  "readingTime": 3.23,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Favour Adeshina",
+      "title": "Power Platform Advocate",
+      "url": "https://github.com/Favour-dgreat",
+      "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+      "key": "favour"
+    }
+  ],
+  "frontMatter": {
+    "slug": "using-data-connectors-with-microsoft-power-apps",
+    "title": "Using Data Connectors while building Power Apps",
+    "authors": "favour",
+    "tags": [
+      "Power Platform",
+      "LowCode",
+      "Power Apps",
+      "Data Connectors"
+    ]
+  },
+  "prevItem": {
+    "title": "Using the Timer Control Input Component in Power Apps",
+    "permalink": "/blog/using-timer-control-input-component-in-power-apps"
+  },
+  "nextItem": {
+    "title": "Setting up Azure AD B2C for User authentication in Power Pages",
+    "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
+  }
+}

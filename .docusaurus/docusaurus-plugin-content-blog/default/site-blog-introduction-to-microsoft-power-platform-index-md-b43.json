@@ -58,9 +58,5 @@
   "prevItem": {
     "title": "Creating a Node.js web server with Express Framework",
     "permalink": "/blog/Create-a-Node.js-web-server-with-Express-Framework"
-  },
-  "nextItem": {
-    "title": "MDX Blog Post",
-    "permalink": "/blog/mdx-blog-post"
   }
 }

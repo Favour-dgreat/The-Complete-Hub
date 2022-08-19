@@ -1,0 +1,52 @@
+{
+  "permalink": "/blog/using-timer-control-input-component-in-power-apps",
+  "source": "@site/blog/using-timer-control-input-component-in-power-apps/index.md",
+  "title": "Using the Timer Control Input Component in Power Apps",
+  "description": "In this article we will be following up from our previous article Using Data Connectors with Microsoft Power Apps to learn about the Timer Control input component used in Microsoft Power Apps.",
+  "date": "2022-08-19T02:34:16.247Z",
+  "formattedDate": "August 19, 2022",
+  "tags": [
+    {
+      "label": "Power Platform",
+      "permalink": "/blog/tags/power-platform"
+    },
+    {
+      "label": "LowCode",
+      "permalink": "/blog/tags/low-code"
+    },
+    {
+      "label": "Power Pages",
+      "permalink": "/blog/tags/power-pages"
+    },
+    {
+      "label": "Auth",
+      "permalink": "/blog/tags/auth"
+    }
+  ],
+  "readingTime": 3.91,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Favour Adeshina",
+      "title": "Power Platform Advocate",
+      "url": "https://github.com/Favour-dgreat",
+      "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+      "key": "favour"
+    }
+  ],
+  "frontMatter": {
+    "slug": "using-timer-control-input-component-in-power-apps",
+    "title": "Using the Timer Control Input Component in Power Apps",
+    "authors": "favour",
+    "tags": [
+      "Power Platform",
+      "LowCode",
+      "Power Pages",
+      "Auth"
+    ]
+  },
+  "nextItem": {
+    "title": "Using Data Connectors while building Power Apps",
+    "permalink": "/blog/using-data-connectors-with-microsoft-power-apps"
+  }
+}
