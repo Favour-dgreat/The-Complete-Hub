@@ -49,13 +49,16 @@
     },
     "config": "config---author-author-5-e-9-a94"
   },
-  "/blog-bf6": {
+  "/blog-c74": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blog-1-ac-223"
+      },
       {
         "content": "content---blogcc-7-c5e"
       },
@@ -69,10 +72,10 @@
         "content": "content---blogd-3-f-39c"
       },
       {
-        "content": "content---blog-9-f-2-b9c"
+        "content": "content---blogbcf-0e6"
       },
       {
-        "content": "content---blogbcf-0e6"
+        "content": "content---blog-9-f-2-b9c"
       }
     ],
     "metadata": "metadata---blogb-2-b-df1"
@@ -123,6 +126,20 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/anxiety-ab0": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-1-ac-223"
+      }
+    ],
+    "tag": "tag---blog-tags-anxietya-26-601",
+    "listMetadata": "listMetadata---blog-tags-anxiety-378-a3b"
   },
   "/blog/tags/auth-07f": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -248,6 +265,20 @@
     "tag": "tag---blog-tags-low-code-81-d-cfc",
     "listMetadata": "listMetadata---blog-tags-low-codeced-723"
   },
+  "/blog/tags/mental-health-e09": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-1-ac-223"
+      }
+    ],
+    "tag": "tag---blog-tags-mental-healtha-93-590",
+    "listMetadata": "listMetadata---blog-tags-mental-health-025-45f"
+  },
   "/blog/tags/node-js-ba3": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
@@ -261,6 +292,20 @@
     ],
     "tag": "tag---blog-tags-node-jscc-6-f8c",
     "listMetadata": "listMetadata---blog-tags-node-js-3-a-5-023"
+  },
+  "/blog/tags/phobia-f3b": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-1-ac-223"
+      }
+    ],
+    "tag": "tag---blog-tags-phobia-251-52e",
+    "listMetadata": "listMetadata---blog-tags-phobia-3-a-1-251"
   },
   "/blog/tags/power-apps-bd9": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -364,6 +409,20 @@
     "tag": "tag---blog-tags-static-files-79-e-cb6",
     "listMetadata": "listMetadata---blog-tags-static-files-23-f-238"
   },
+  "/blog/tags/virtual-reality-d5c": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-1-ac-223"
+      }
+    ],
+    "tag": "tag---blog-tags-virtual-reality-9-d-4-69f",
+    "listMetadata": "listMetadata---blog-tags-virtual-reality-0-a-2-b7c"
+  },
   "/blog/tags/web-server-c46": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
@@ -393,6 +452,14 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-using-timer-control-input-component-in-power-appsddd-0fa"
+  },
+  "/blog/virtual-reality-and-mental-health-e08": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-virtual-reality-and-mental-healthaf-6-3bc"
   },
   "/markdown-page-7bf": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",

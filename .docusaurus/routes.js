@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'bf6'),
+    component: ComponentCreator('/blog', 'c74'),
     exact: true
   },
   {
@@ -75,6 +75,11 @@ export default [
   {
     path: '/blog/tags',
     component: ComponentCreator('/blog/tags', '78c'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/anxiety',
+    component: ComponentCreator('/blog/tags/anxiety', 'ab0'),
     exact: true
   },
   {
@@ -118,8 +123,18 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/mental-health',
+    component: ComponentCreator('/blog/tags/mental-health', 'e09'),
+    exact: true
+  },
+  {
     path: '/blog/tags/node-js',
     component: ComponentCreator('/blog/tags/node-js', 'ba3'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/phobia',
+    component: ComponentCreator('/blog/tags/phobia', 'f3b'),
     exact: true
   },
   {
@@ -153,6 +168,11 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/virtual-reality',
+    component: ComponentCreator('/blog/tags/virtual-reality', 'd5c'),
+    exact: true
+  },
+  {
     path: '/blog/tags/web-server',
     component: ComponentCreator('/blog/tags/web-server', 'c46'),
     exact: true
@@ -165,6 +185,11 @@ export default [
   {
     path: '/blog/using-timer-control-input-component-in-power-apps',
     component: ComponentCreator('/blog/using-timer-control-input-component-in-power-apps', '65a'),
+    exact: true
+  },
+  {
+    path: '/blog/virtual-reality-and-mental-health',
+    component: ComponentCreator('/blog/virtual-reality-and-mental-health', 'e08'),
     exact: true
   },
   {

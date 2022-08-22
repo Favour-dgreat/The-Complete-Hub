@@ -56,6 +56,10 @@
     ]
   },
   "prevItem": {
+    "title": "Using the Timer Control Input Component in Power Apps",
+    "permalink": "/blog/using-timer-control-input-component-in-power-apps"
+  },
+  "nextItem": {
     "title": "Creating a Node.js web server with Express Framework",
     "permalink": "/blog/Create-a-Node.js-web-server-with-Express-Framework"
   }

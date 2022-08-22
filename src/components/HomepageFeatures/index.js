@@ -7,20 +7,20 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
-    title: 'Embedding templates and static files in CLI using //go:embed',
+    title: 'Virtual Reality and Mental Health',
     description: (
       <>
-      This article is for someone who just started writing Go, and have no idea about //go:embed feature which came with the released version: 1.16.
-      </>
+      This article is targeted at providing the relevance of tech in promoting mental health
+      amongst individuals of different age, sex and even race      </>
     ),
     date: (
       <>
-        19th August, 2022
+        22nd August, 2022
       </>
     ),
     author: (
       <>
-        Saintmalik
+        Titilayo Oluwasesan
       </>
     ),
   },

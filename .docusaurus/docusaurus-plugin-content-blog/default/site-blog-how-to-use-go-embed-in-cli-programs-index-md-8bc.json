@@ -45,6 +45,10 @@
       "static files"
     ]
   },
+  "prevItem": {
+    "title": "Virtual Reality and Mental Health",
+    "permalink": "/blog/virtual-reality-and-mental-health"
+  },
   "nextItem": {
     "title": "Setting up Azure AD B2C for User authentication in Power Pages",
     "permalink": "/blog/setting-up-azure-AD-B2C-for-user-auth-in-power-pages"
