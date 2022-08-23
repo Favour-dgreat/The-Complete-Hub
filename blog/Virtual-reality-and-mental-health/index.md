@@ -116,7 +116,7 @@ to meet, interact and reach out to other people all the while not
 altering normal functioning but rather allowing its users to choose
 their environment and explore it like they normally would in reality.
 
-It\'s normal to feel nervous in some social situations. For example,
+It's normal to feel nervous in some social situations. For example,
 going on a date or giving a presentation may cause that feeling of
 butterflies in your stomach. But in social anxiety disorder, also called
 *social phobia*, everyday interactions cause significant anxiety,
@@ -140,7 +140,7 @@ Then the question that would most likely be asked is how do we get
 individuals with social anxiety disorder to come out of their own shell
 and begin to open themselves up to others around them without being
 forced and in an environment where they can easily engage a "flight
-response"?
+response" when they feel overwhelmed?
 
 This is a question that I believe the introduction of virtual reality
 may seek to proffer solution to, in that;
@@ -152,13 +152,11 @@ may seek to proffer solution to, in that;
     what they want other people to perceive them as.
 
 2.  They can select the scenery and elements that they want contained in
-    the virtual environment i.e. they are able to select where they want
+    the virtual environment, i.e., they are able to select where they want to
     visit. For example, someone who is scared of animals would be able
     to avoid places in the virtual environment that supports animals.
 
-3.  They can choose the time that's most convenient for them to enter
-    the virtual environment and also leave whether to interact with
-    others or just to explore.
+3.  They can choose the time that's most convenient for them to enter the virtual           environment, decide when to leave and whether to interact with others or just explore.
 
 4.  The virtual environment also allows them to be able to control the
     presence of others in their space. They can choose to invite and
@@ -177,10 +175,10 @@ is effective and what effect it has on the human psyche is still
 missing.
 
 Also, the cost of acquiring a virtual reality gear is relatively high.
-Certain parts of the world with unstable network connection and constant
+Certain parts of the world with unstable network connection and inconsistent
 power supply would heavily affect the methods described in the article.
 
-In conclusion you would agree with me that this has proved to somewhat
+In conclusion you would agree with me that this has proved to be somewhat
 good read and that tech is very useful in enhancing and supporting all
 existing fields.
 
