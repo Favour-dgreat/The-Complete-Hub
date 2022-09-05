@@ -49,13 +49,16 @@
     },
     "config": "config---author-author-5-e-9-a94"
   },
-  "/blog-c74": {
+  "/blog-b90": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blog-337-35a"
+      },
       {
         "content": "content---blog-1-ac-223"
       },
@@ -72,10 +75,10 @@
         "content": "content---blogd-3-f-39c"
       },
       {
-        "content": "content---blogbcf-0e6"
+        "content": "content---blog-9-f-2-b9c"
       },
       {
-        "content": "content---blog-9-f-2-b9c"
+        "content": "content---blogbcf-0e6"
       }
     ],
     "metadata": "metadata---blogb-2-b-df1"
@@ -102,6 +105,14 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-embedding-static-files-in-cli-with-go-embed-8-bc-57e"
+  },
+  "/blog/introduction-to-carbon-programming-language-fed": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-introduction-to-carbon-programming-language-707-d6b"
   },
   "/blog/introduction-to-power-platform-d05": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
@@ -172,6 +183,34 @@
     "tag": "tag---blog-tags-backend-development-69-c-2d2",
     "listMetadata": "listMetadata---blog-tags-backend-development-7-aa-b47"
   },
+  "/blog/tags/c-ca0": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-337-35a"
+      }
+    ],
+    "tag": "tag---blog-tags-c-37-b-d14",
+    "listMetadata": "listMetadata---blog-tags-ccc-8-b6c"
+  },
+  "/blog/tags/carbon-414": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-337-35a"
+      }
+    ],
+    "tag": "tag---blog-tags-carbon-24-c-a48",
+    "listMetadata": "listMetadata---blog-tags-carbone-61-e8b"
+  },
   "/blog/tags/cli-fe7": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
@@ -241,6 +280,20 @@
     ],
     "tag": "tag---blog-tags-golang-00-b-a67",
     "listMetadata": "listMetadata---blog-tags-golangcc-5-1b8"
+  },
+  "/blog/tags/google-667": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-337-35a"
+      }
+    ],
+    "tag": "tag---blog-tags-googlecbc-cf2",
+    "listMetadata": "listMetadata---blog-tags-googleab-6-281"
   },
   "/blog/tags/low-code-b9b": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -394,6 +447,34 @@
     ],
     "tag": "tag---blog-tags-power-platforme-65-2ca",
     "listMetadata": "listMetadata---blog-tags-power-platform-22-d-392"
+  },
+  "/blog/tags/programming-6ff": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-337-35a"
+      }
+    ],
+    "tag": "tag---blog-tags-programmingf-54-2c1",
+    "listMetadata": "listMetadata---blog-tags-programming-448-1f3"
+  },
+  "/blog/tags/proxy-045": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-337-35a"
+      }
+    ],
+    "tag": "tag---blog-tags-proxy-05-b-43b",
+    "listMetadata": "listMetadata---blog-tags-proxy-6-e-8-011"
   },
   "/blog/tags/static-files-44c": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",

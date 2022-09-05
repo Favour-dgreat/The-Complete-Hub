@@ -7,11 +7,28 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
+    title: 'An Introduction to Carbon Programming Language',
+    description: (
+      <>
+      In this article we will learn about various aspects of Carbon language and Carbon language basic syntax along with code samples to get started with Carbon Programming language </>
+    ),
+    date: (
+      <>
+        1st September, 2022
+      </>
+    ),
+    author: (
+      <>
+         Isaac Ademiluyi
+      </>
+    ),
+  },
+  {
     title: 'Virtual Reality and Mental Health',
     description: (
       <>
-      This article is targeted at providing the relevance of tech in promoting mental health
-      amongst individuals of different age, sex and even race      </>
+      In this article you will find out the relevance of tech in promoting mental health
+      amongst individuals of different age, sex and even race using Virtual Reality  </>
     ),
     date: (
       <>
@@ -43,24 +60,7 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: 'Introduction to Microsoft Power Platform',
-    description: (
-      <>
-        This article is targeted at young innovative minds, who are passionate about learning about Microsoft Low-Code/No-Code tools and are interested in building with these tools. 
-      </>
-    ),
-    date: (
-      <>
-        19th August, 2022
-      </>
-    ),
-    author: (
-      <>
-        Favour Adeshina
-      </>
-    ),
-  },
+
   {
     title: 'Using Data Connectors with Microsoft Power Apps',
     description: (

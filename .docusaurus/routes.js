@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'c74'),
+    component: ComponentCreator('/blog', 'b90'),
     exact: true
   },
   {
@@ -60,6 +60,11 @@ export default [
   {
     path: '/blog/embedding-static-files-in-cli-with-go-embed',
     component: ComponentCreator('/blog/embedding-static-files-in-cli-with-go-embed', '5c1'),
+    exact: true
+  },
+  {
+    path: '/blog/introduction-to-carbon-programming-language',
+    component: ComponentCreator('/blog/introduction-to-carbon-programming-language', 'fed'),
     exact: true
   },
   {
@@ -93,6 +98,16 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/c',
+    component: ComponentCreator('/blog/tags/c', 'ca0'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/carbon',
+    component: ComponentCreator('/blog/tags/carbon', '414'),
+    exact: true
+  },
+  {
     path: '/blog/tags/cli',
     component: ComponentCreator('/blog/tags/cli', 'fe7'),
     exact: true
@@ -115,6 +130,11 @@ export default [
   {
     path: '/blog/tags/golang',
     component: ComponentCreator('/blog/tags/golang', 'b74'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/google',
+    component: ComponentCreator('/blog/tags/google', '667'),
     exact: true
   },
   {
@@ -160,6 +180,16 @@ export default [
   {
     path: '/blog/tags/power-platform',
     component: ComponentCreator('/blog/tags/power-platform', '895'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/programming',
+    component: ComponentCreator('/blog/tags/programming', '6ff'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/proxy',
+    component: ComponentCreator('/blog/tags/proxy', '045'),
     exact: true
   },
   {

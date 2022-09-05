@@ -29,7 +29,7 @@
     {
       "name": "Oluwasesan Titilayo",
       "title": "Psychologist and aspiring Frontend Developer",
-      "url": "https://i.ibb.co/R4RbQXj/IMG-1718.jpg",
+      "url": "https://github.com/spicasophia",
       "imageURL": "https://i.ibb.co/R4RbQXj/IMG-1718.jpg",
       "key": "titilayo"
     }
@@ -44,6 +44,10 @@
       "Phobia",
       "Anxiety"
     ]
+  },
+  "prevItem": {
+    "title": "An Introduction to Carbon Programming Language, C++ proxy Released by Google",
+    "permalink": "/blog/introduction-to-carbon-programming-language"
   },
   "nextItem": {
     "title": "Embedding templates and static files in CLI using //go:embed",

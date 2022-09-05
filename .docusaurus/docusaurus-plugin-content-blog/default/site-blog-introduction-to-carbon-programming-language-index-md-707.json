@@ -1,0 +1,57 @@
+{
+  "permalink": "/blog/introduction-to-carbon-programming-language",
+  "source": "@site/blog/Introduction-to-Carbon-Programming-Language/index.md",
+  "title": "An Introduction to Carbon Programming Language, C++ proxy Released by Google",
+  "description": "Google introduced Carbon language as the next generation programming language proxy to C++ programming language. In this article we will learn about various aspects of Carbon language and Carbon language basic syntax along with cod examples that you can use to get started with Carbon Programming language.",
+  "date": "2022-09-01T12:00:59.590Z",
+  "formattedDate": "September 1, 2022",
+  "tags": [
+    {
+      "label": "Carbon",
+      "permalink": "/blog/tags/carbon"
+    },
+    {
+      "label": "Google",
+      "permalink": "/blog/tags/google"
+    },
+    {
+      "label": "C++",
+      "permalink": "/blog/tags/c"
+    },
+    {
+      "label": "Proxy",
+      "permalink": "/blog/tags/proxy"
+    },
+    {
+      "label": "Programming",
+      "permalink": "/blog/tags/programming"
+    }
+  ],
+  "readingTime": 11.975,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Ademiluyi Oluwasegun Isaac",
+      "title": "Full Stack Developer",
+      "url": "https://github.com/Segnapor",
+      "imageURL": "https://avatars.githubusercontent.com/u/104950677?v=4",
+      "key": "isaac"
+    }
+  ],
+  "frontMatter": {
+    "slug": "introduction-to-carbon-programming-language",
+    "title": "An Introduction to Carbon Programming Language, C++ proxy Released by Google",
+    "authors": "isaac",
+    "tags": [
+      "Carbon",
+      "Google",
+      "C++",
+      "Proxy",
+      "Programming"
+    ]
+  },
+  "nextItem": {
+    "title": "Virtual Reality and Mental Health",
+    "permalink": "/blog/virtual-reality-and-mental-health"
+  }
+}
