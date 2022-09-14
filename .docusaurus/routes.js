@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'b90'),
+    component: ComponentCreator('/blog', '104'),
     exact: true
   },
   {
@@ -60,6 +60,11 @@ export default [
   {
     path: '/blog/embedding-static-files-in-cli-with-go-embed',
     component: ComponentCreator('/blog/embedding-static-files-in-cli-with-go-embed', '5c1'),
+    exact: true
+  },
+  {
+    path: '/blog/introduction to data engineering',
+    component: ComponentCreator('/blog/introduction to data engineering', '7cc'),
     exact: true
   },
   {
@@ -98,6 +103,11 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/big-data',
+    component: ComponentCreator('/blog/tags/big-data', '8a5'),
+    exact: true
+  },
+  {
     path: '/blog/tags/c',
     component: ComponentCreator('/blog/tags/c', 'ca0'),
     exact: true
@@ -115,6 +125,21 @@ export default [
   {
     path: '/blog/tags/data-connectors',
     component: ComponentCreator('/blog/tags/data-connectors', '10a'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/data-engineering',
+    component: ComponentCreator('/blog/tags/data-engineering', 'ddb'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/data-science',
+    component: ComponentCreator('/blog/tags/data-science', 'a2c'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/data-workflow',
+    component: ComponentCreator('/blog/tags/data-workflow', 'efe'),
     exact: true
   },
   {

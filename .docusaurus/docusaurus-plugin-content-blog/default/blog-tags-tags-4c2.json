@@ -1,5 +1,25 @@
 [
   {
+    "label": "Big data",
+    "permalink": "/blog/tags/big-data",
+    "count": 1
+  },
+  {
+    "label": "Data Engineering",
+    "permalink": "/blog/tags/data-engineering",
+    "count": 1
+  },
+  {
+    "label": "Data Science",
+    "permalink": "/blog/tags/data-science",
+    "count": 1
+  },
+  {
+    "label": "Data Workflow",
+    "permalink": "/blog/tags/data-workflow",
+    "count": 1
+  },
+  {
     "label": "Carbon",
     "permalink": "/blog/tags/carbon",
     "count": 1

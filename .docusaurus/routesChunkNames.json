@@ -49,13 +49,16 @@
     },
     "config": "config---author-author-5-e-9-a94"
   },
-  "/blog-b90": {
+  "/blog-104": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blogaed-458"
+      },
       {
         "content": "content---blog-337-35a"
       },
@@ -105,6 +108,14 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-embedding-static-files-in-cli-with-go-embed-8-bc-57e"
+  },
+  "/blog/introduction to data engineering-7cc": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-introduction-to-data-engineering-68-f-375"
   },
   "/blog/introduction-to-carbon-programming-language-fed": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
@@ -183,6 +194,20 @@
     "tag": "tag---blog-tags-backend-development-69-c-2d2",
     "listMetadata": "listMetadata---blog-tags-backend-development-7-aa-b47"
   },
+  "/blog/tags/big-data-8a5": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaed-458"
+      }
+    ],
+    "tag": "tag---blog-tags-big-datac-3-b-b98",
+    "listMetadata": "listMetadata---blog-tags-big-dataae-6-874"
+  },
   "/blog/tags/c-ca0": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
@@ -238,6 +263,48 @@
     ],
     "tag": "tag---blog-tags-data-connectors-452-d7c",
     "listMetadata": "listMetadata---blog-tags-data-connectorse-15-0d0"
+  },
+  "/blog/tags/data-engineering-ddb": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaed-458"
+      }
+    ],
+    "tag": "tag---blog-tags-data-engineering-23-d-1a7",
+    "listMetadata": "listMetadata---blog-tags-data-engineeringe-99-7cf"
+  },
+  "/blog/tags/data-science-a2c": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaed-458"
+      }
+    ],
+    "tag": "tag---blog-tags-data-science-5-fc-166",
+    "listMetadata": "listMetadata---blog-tags-data-science-606-308"
+  },
+  "/blog/tags/data-workflow-efe": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaed-458"
+      }
+    ],
+    "tag": "tag---blog-tags-data-workfloweaa-eb3",
+    "listMetadata": "listMetadata---blog-tags-data-workflow-60-d-218"
   },
   "/blog/tags/express-3fe": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",

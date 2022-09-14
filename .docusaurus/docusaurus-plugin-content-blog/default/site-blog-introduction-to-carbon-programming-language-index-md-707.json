@@ -3,8 +3,8 @@
   "source": "@site/blog/Introduction-to-Carbon-Programming-Language/index.md",
   "title": "An Introduction to Carbon Programming Language, C++ proxy Released by Google",
   "description": "Google introduced Carbon language as the next generation programming language proxy to C++ programming language. In this article we will learn about various aspects of Carbon language and Carbon language basic syntax along with cod examples that you can use to get started with Carbon Programming language.",
-  "date": "2022-09-01T12:00:59.590Z",
-  "formattedDate": "September 1, 2022",
+  "date": "2022-09-05T12:13:52.000Z",
+  "formattedDate": "September 5, 2022",
   "tags": [
     {
       "label": "Carbon",
@@ -49,6 +49,10 @@
       "Proxy",
       "Programming"
     ]
+  },
+  "prevItem": {
+    "title": "Laying the foundation:Data Engineers",
+    "permalink": "/blog/introduction to data engineering"
   },
   "nextItem": {
     "title": "Virtual Reality and Mental Health",
