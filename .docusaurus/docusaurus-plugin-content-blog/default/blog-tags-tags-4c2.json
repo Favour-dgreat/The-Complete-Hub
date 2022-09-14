@@ -1,5 +1,40 @@
 [
   {
+    "label": "Community",
+    "permalink": "/blog/tags/community",
+    "count": 2
+  },
+  {
+    "label": "Tech Community",
+    "permalink": "/blog/tags/tech-community",
+    "count": 2
+  },
+  {
+    "label": "Community Building",
+    "permalink": "/blog/tags/community-building",
+    "count": 2
+  },
+  {
+    "label": "Tech Bro",
+    "permalink": "/blog/tags/tech-bro",
+    "count": 1
+  },
+  {
+    "label": "Tech Sis",
+    "permalink": "/blog/tags/tech-sis",
+    "count": 1
+  },
+  {
+    "label": "Innovation",
+    "permalink": "/blog/tags/innovation",
+    "count": 1
+  },
+  {
+    "label": "Inclusivity",
+    "permalink": "/blog/tags/inclusivity",
+    "count": 1
+  },
+  {
     "label": "Big data",
     "permalink": "/blog/tags/big-data",
     "count": 1

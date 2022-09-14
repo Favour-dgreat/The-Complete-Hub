@@ -44,12 +44,17 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '104'),
+    component: ComponentCreator('/blog', '83b'),
     exact: true
   },
   {
     path: '/blog/archive',
     component: ComponentCreator('/blog/archive', '7f9'),
+    exact: true
+  },
+  {
+    path: '/blog/building-an-inclusive-community',
+    component: ComponentCreator('/blog/building-an-inclusive-community', '42d'),
     exact: true
   },
   {
@@ -123,6 +128,16 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/community',
+    component: ComponentCreator('/blog/tags/community', '58f'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/community-building',
+    component: ComponentCreator('/blog/tags/community-building', '197'),
+    exact: true
+  },
+  {
     path: '/blog/tags/data-connectors',
     component: ComponentCreator('/blog/tags/data-connectors', '10a'),
     exact: true
@@ -160,6 +175,16 @@ export default [
   {
     path: '/blog/tags/google',
     component: ComponentCreator('/blog/tags/google', '667'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/inclusivity',
+    component: ComponentCreator('/blog/tags/inclusivity', 'd76'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/innovation',
+    component: ComponentCreator('/blog/tags/innovation', '5b7'),
     exact: true
   },
   {
@@ -223,6 +248,21 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/tech-bro',
+    component: ComponentCreator('/blog/tags/tech-bro', 'c35'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/tech-community',
+    component: ComponentCreator('/blog/tags/tech-community', 'c3b'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/tech-sis',
+    component: ComponentCreator('/blog/tags/tech-sis', '886'),
+    exact: true
+  },
+  {
     path: '/blog/tags/virtual-reality',
     component: ComponentCreator('/blog/tags/virtual-reality', 'd5c'),
     exact: true
@@ -230,6 +270,11 @@ export default [
   {
     path: '/blog/tags/web-server',
     component: ComponentCreator('/blog/tags/web-server', 'c46'),
+    exact: true
+  },
+  {
+    path: '/blog/tech-community-and-what-it-entails',
+    component: ComponentCreator('/blog/tech-community-and-what-it-entails', '452'),
     exact: true
   },
   {

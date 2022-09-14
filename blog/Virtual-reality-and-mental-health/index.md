@@ -6,8 +6,7 @@ tags: [Mental health, Virtual reality, Phobia, Anxiety]
 ---
 
 This article while having not undergone a scientific research is
-targeted at providing the relevance of tech in promoting mental health
-amongst individuals of different age, sex and even race.
+targeted at providing the relevance of tech in promoting mental health amongst individuals of different age, sex and even race.
 
 <!--truncate-->
 

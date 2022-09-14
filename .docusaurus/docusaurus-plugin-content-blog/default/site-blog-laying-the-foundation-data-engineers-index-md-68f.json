@@ -3,7 +3,7 @@
   "source": "@site/blog/laying-the-foundation-data-engineers/index.md",
   "title": "Laying the foundation:Data Engineers",
   "description": "image title",
-  "date": "2022-09-14T09:19:08.979Z",
+  "date": "2022-09-14T09:28:37.000Z",
   "formattedDate": "September 14, 2022",
   "tags": [
     {
@@ -44,6 +44,10 @@
       "Data Science",
       "Data Workflow"
     ]
+  },
+  "prevItem": {
+    "title": "Building an Inclusive Tech Community",
+    "permalink": "/blog/building-an-inclusive-community"
   },
   "nextItem": {
     "title": "An Introduction to Carbon Programming Language, C++ proxy Released by Google",

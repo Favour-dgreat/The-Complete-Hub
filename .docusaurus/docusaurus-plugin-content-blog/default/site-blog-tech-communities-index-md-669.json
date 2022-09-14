@@ -1,0 +1,62 @@
+{
+  "permalink": "/blog/tech-community-and-what-it-entails",
+  "source": "@site/blog/Tech-communities/index.md",
+  "title": "A better understanding of Tech Communities",
+  "description": "image title",
+  "date": "2022-09-14T10:20:51.478Z",
+  "formattedDate": "September 14, 2022",
+  "tags": [
+    {
+      "label": "Community",
+      "permalink": "/blog/tags/community"
+    },
+    {
+      "label": "Tech Community",
+      "permalink": "/blog/tags/tech-community"
+    },
+    {
+      "label": "Community Building",
+      "permalink": "/blog/tags/community-building"
+    },
+    {
+      "label": "Tech Bro",
+      "permalink": "/blog/tags/tech-bro"
+    },
+    {
+      "label": "Tech Sis",
+      "permalink": "/blog/tags/tech-sis"
+    },
+    {
+      "label": "Innovation",
+      "permalink": "/blog/tags/innovation"
+    }
+  ],
+  "readingTime": 2.655,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Favour Adeshina",
+      "title": "Power Platform Advocate",
+      "url": "https://github.com/Favour-dgreat",
+      "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+      "key": "favour"
+    }
+  ],
+  "frontMatter": {
+    "slug": "tech-community-and-what-it-entails",
+    "title": "A better understanding of Tech Communities",
+    "authors": "favour",
+    "tags": [
+      "Community",
+      "Tech Community",
+      "Community Building",
+      "Tech Bro",
+      "Tech Sis",
+      "Innovation"
+    ]
+  },
+  "nextItem": {
+    "title": "Building an Inclusive Tech Community",
+    "permalink": "/blog/building-an-inclusive-community"
+  }
+}

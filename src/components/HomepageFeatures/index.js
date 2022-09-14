@@ -7,6 +7,57 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
+    title: 'Laying the foundation:Data Engineers',
+    description: (
+      <>
+    In this article, You will understand the steps in which data flows within an organization, who are data engineers, and their responsibilities. </>
+    ),
+    date: (
+      <>
+        14th September, 2022
+      </>
+    ),
+    author: (
+      <>
+         Marvellous Amos
+      </>
+    ),
+  },
+  {
+    title: 'A better understanding of Tech Communities',
+    description: (
+      <>
+    In this article, I will be taking a deeper look into what tech communities are and how you can benefit from being in one. </>
+    ),
+    date: (
+      <>
+        14th September, 2022
+      </>
+    ),
+    author: (
+      <>
+         Favour Adeshina
+      </>
+    ),
+  },
+  {
+    title: 'Building an Inclusive Tech Community',
+    description: (
+      <>
+    In this article I gave a deep dive into building an inclusive community, following the 7 P's for Community Building. </>
+    ),
+    date: (
+      <>
+        14th September, 2022
+      </>
+    ),
+    author: (
+      <>
+         Marvellous Amos
+      </>
+    ),
+  },
+  {
     title: 'An Introduction to Carbon Programming Language',
     description: (
       <>

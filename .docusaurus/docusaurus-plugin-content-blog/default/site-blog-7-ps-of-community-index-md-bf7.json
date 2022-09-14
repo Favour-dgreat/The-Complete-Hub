@@ -1,0 +1,56 @@
+{
+  "permalink": "/blog/building-an-inclusive-community",
+  "source": "@site/blog/7-p's-of-community/index.md",
+  "title": "Building an Inclusive Tech Community",
+  "description": "image title",
+  "date": "2022-09-14T10:20:19.734Z",
+  "formattedDate": "September 14, 2022",
+  "tags": [
+    {
+      "label": "Community",
+      "permalink": "/blog/tags/community"
+    },
+    {
+      "label": "Tech Community",
+      "permalink": "/blog/tags/tech-community"
+    },
+    {
+      "label": "Community Building",
+      "permalink": "/blog/tags/community-building"
+    },
+    {
+      "label": "Inclusivity",
+      "permalink": "/blog/tags/inclusivity"
+    }
+  ],
+  "readingTime": 4.79,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Favour Adeshina",
+      "title": "Power Platform Advocate",
+      "url": "https://github.com/Favour-dgreat",
+      "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+      "key": "favour"
+    }
+  ],
+  "frontMatter": {
+    "slug": "building-an-inclusive-community",
+    "title": "Building an Inclusive Tech Community",
+    "authors": "favour",
+    "tags": [
+      "Community",
+      "Tech Community",
+      "Community Building",
+      "Inclusivity"
+    ]
+  },
+  "prevItem": {
+    "title": "Tech Communities and what it entails",
+    "permalink": "/blog/tech-community-and-what-it-entails"
+  },
+  "nextItem": {
+    "title": "Laying the foundation:Data Engineers",
+    "permalink": "/blog/introduction to data engineering"
+  }
+}
