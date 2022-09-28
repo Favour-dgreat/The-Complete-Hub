@@ -3,7 +3,7 @@
   "source": "@site/blog/7ps-of-community/index.md",
   "title": "Building an Inclusive Tech Community",
   "description": "image title",
-  "date": "2022-09-14T10:20:19.734Z",
+  "date": "2022-09-14T10:35:25.000Z",
   "formattedDate": "September 14, 2022",
   "tags": [
     {
@@ -46,11 +46,11 @@
     ]
   },
   "prevItem": {
-    "title": "A better understanding of Tech Communities",
-    "permalink": "/blog/tech-community-and-what-it-entails"
+    "title": "Personality Test and Career Development",
+    "permalink": "/blog/personality-test-and-career-development"
   },
   "nextItem": {
-    "title": "Laying the foundation:Data Engineers",
-    "permalink": "/blog/introduction to data engineering"
+    "title": "A better understanding of Tech Communities",
+    "permalink": "/blog/tech-community-and-what-it-entails"
   }
 }

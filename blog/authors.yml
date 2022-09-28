@@ -48,6 +48,12 @@ isaac:
 
 marvellous:
   name: Marvellous Amos
-  title: Frontend Developer
+  title: Data Enthusiast
   url: https://github.com/Marvel-D
   image_url: https://media-exp1.licdn.com/dms/image/C4D03AQFeLWR8xd5KZA/profile-displayphoto-shrink_400_400/0/1658596996119?e=1668643200&v=beta&t=capqSrOQNzOQu6gNR6YybTHla9FnLw5RkTHaweHwHRg
+
+tobi:
+  name: Ogunfunminiyi Tobi
+  title: Copywriter
+  url: https://www.linkedin.com/in/tobi-samuel-260216228
+  image_url: https://i.ibb.co/c65FKcP/Tobi.jpg

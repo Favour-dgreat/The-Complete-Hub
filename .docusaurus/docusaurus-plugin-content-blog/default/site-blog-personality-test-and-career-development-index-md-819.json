@@ -1,0 +1,47 @@
+{
+  "permalink": "/blog/personality-test-and-career-development",
+  "source": "@site/blog/personality-test-and-career-development/index.md",
+  "title": "Personality Test and Career Development",
+  "description": "image title",
+  "date": "2022-09-28T07:38:26.000Z",
+  "formattedDate": "September 28, 2022",
+  "tags": [
+    {
+      "label": "Personality Test",
+      "permalink": "/blog/tags/personality-test"
+    },
+    {
+      "label": "Career Development",
+      "permalink": "/blog/tags/career-development"
+    },
+    {
+      "label": "Morale Building",
+      "permalink": "/blog/tags/morale-building"
+    }
+  ],
+  "readingTime": 5.865,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Ogunfunminiyi Tobi",
+      "title": "Copywriter",
+      "url": "https://www.linkedin.com/in/tobi-samuel-260216228",
+      "imageURL": "https://i.ibb.co/c65FKcP/Tobi.jpg",
+      "key": "tobi"
+    }
+  ],
+  "frontMatter": {
+    "slug": "personality-test-and-career-development",
+    "title": "Personality Test and Career Development",
+    "authors": "tobi",
+    "tags": [
+      "Personality Test",
+      "Career Development",
+      "Morale Building"
+    ]
+  },
+  "nextItem": {
+    "title": "Building an Inclusive Tech Community",
+    "permalink": "/blog/building-an-inclusive-community"
+  }
+}

@@ -3,7 +3,7 @@
   "source": "@site/blog/Tech-communities/index.md",
   "title": "A better understanding of Tech Communities",
   "description": "image title",
-  "date": "2022-09-14T10:20:51.478Z",
+  "date": "2022-09-14T10:35:25.000Z",
   "formattedDate": "September 14, 2022",
   "tags": [
     {
@@ -55,8 +55,12 @@
       "Innovation"
     ]
   },
-  "nextItem": {
+  "prevItem": {
     "title": "Building an Inclusive Tech Community",
     "permalink": "/blog/building-an-inclusive-community"
+  },
+  "nextItem": {
+    "title": "Laying the foundation:Data Engineers",
+    "permalink": "/blog/introduction to data engineering"
   }
 }

@@ -44,7 +44,7 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', '83b'),
+    component: ComponentCreator('/blog', 'cca'),
     exact: true
   },
   {
@@ -80,6 +80,11 @@ export default [
   {
     path: '/blog/introduction-to-power-platform',
     component: ComponentCreator('/blog/introduction-to-power-platform', 'd05'),
+    exact: true
+  },
+  {
+    path: '/blog/personality-test-and-career-development',
+    component: ComponentCreator('/blog/personality-test-and-career-development', 'cd7'),
     exact: true
   },
   {
@@ -123,18 +128,23 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/career-development',
+    component: ComponentCreator('/blog/tags/career-development', 'df9'),
+    exact: true
+  },
+  {
     path: '/blog/tags/cli',
     component: ComponentCreator('/blog/tags/cli', 'fe7'),
     exact: true
   },
   {
     path: '/blog/tags/community',
-    component: ComponentCreator('/blog/tags/community', '58f'),
+    component: ComponentCreator('/blog/tags/community', '803'),
     exact: true
   },
   {
     path: '/blog/tags/community-building',
-    component: ComponentCreator('/blog/tags/community-building', '197'),
+    component: ComponentCreator('/blog/tags/community-building', 'bde'),
     exact: true
   },
   {
@@ -198,8 +208,18 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/morale-building',
+    component: ComponentCreator('/blog/tags/morale-building', '129'),
+    exact: true
+  },
+  {
     path: '/blog/tags/node-js',
     component: ComponentCreator('/blog/tags/node-js', 'ba3'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/personality-test',
+    component: ComponentCreator('/blog/tags/personality-test', 'bf4'),
     exact: true
   },
   {
@@ -254,7 +274,7 @@ export default [
   },
   {
     path: '/blog/tags/tech-community',
-    component: ComponentCreator('/blog/tags/tech-community', 'c3b'),
+    component: ComponentCreator('/blog/tags/tech-community', '524'),
     exact: true
   },
   {

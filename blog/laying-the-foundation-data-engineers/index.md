@@ -50,7 +50,7 @@ Data engineers ingest data from various sources and optimize the databases for a
 
 In simple terms, they collect data from many sources and manage it for other data professionals to access and use.
 
-## Conclusion;
+## Conclusion
 In conlusion, kindly take note of the following points:
 - Data engineers are responsible for the first step in the data workflow, collecting and storing data.
 

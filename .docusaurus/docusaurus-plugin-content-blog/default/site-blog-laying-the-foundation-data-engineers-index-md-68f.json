@@ -28,7 +28,7 @@
   "authors": [
     {
       "name": "Marvellous Amos",
-      "title": "Frontend Developer",
+      "title": "Data Enthusiast",
       "url": "https://github.com/Marvel-D",
       "imageURL": "https://media-exp1.licdn.com/dms/image/C4D03AQFeLWR8xd5KZA/profile-displayphoto-shrink_400_400/0/1658596996119?e=1668643200&v=beta&t=capqSrOQNzOQu6gNR6YybTHla9FnLw5RkTHaweHwHRg",
       "key": "marvellous"
@@ -46,8 +46,8 @@
     ]
   },
   "prevItem": {
-    "title": "Building an Inclusive Tech Community",
-    "permalink": "/blog/building-an-inclusive-community"
+    "title": "A better understanding of Tech Communities",
+    "permalink": "/blog/tech-community-and-what-it-entails"
   },
   "nextItem": {
     "title": "An Introduction to Carbon Programming Language, C++ proxy Released by Google",

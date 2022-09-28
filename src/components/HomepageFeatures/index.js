@@ -7,6 +7,23 @@ import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
+    title: 'Personality Test and Career Development',
+    description: (
+      <>
+    This article is aimed at helping individuals, particularly youths in making the right decisions regarding their careers. </>
+    ),
+    date: (
+      <>
+        28th September, 2022
+      </>
+    ),
+    author: (
+      <>
+         Tobi
+      </>
+    ),
+  },
+  {
     title: 'Laying the foundation:Data Engineers',
     description: (
       <>
@@ -136,23 +153,6 @@ const FeatureList = [
       <>
        In this article, we will be learning how to use Microsoft Azure AD B2C as an identity provider in Power Pages, for setting up user authentication, while working on a project.
       </>
-    ),
-    date: (
-      <>
-        19th August, 2022
-      </>
-    ),
-    author: (
-      <>
-        Favour Adeshina
-      </>
-    ),
-  },
-  {
-    title: 'Using the Timer Control Input Component in Power Apps',
-    description: (
-      <>
-      In this article we will be following up from our previous article Using Data Connectors with Microsoft Power Apps to learn about the Timer Control input component used in Microsoft Power Apps.      </>
     ),
     date: (
       <>

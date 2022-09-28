@@ -1,5 +1,20 @@
 [
   {
+    "label": "Personality Test",
+    "permalink": "/blog/tags/personality-test",
+    "count": 1
+  },
+  {
+    "label": "Career Development",
+    "permalink": "/blog/tags/career-development",
+    "count": 1
+  },
+  {
+    "label": "Morale Building",
+    "permalink": "/blog/tags/morale-building",
+    "count": 1
+  },
+  {
     "label": "Community",
     "permalink": "/blog/tags/community",
     "count": 2
@@ -15,6 +30,11 @@
     "count": 2
   },
   {
+    "label": "Inclusivity",
+    "permalink": "/blog/tags/inclusivity",
+    "count": 1
+  },
+  {
     "label": "Tech Bro",
     "permalink": "/blog/tags/tech-bro",
     "count": 1
@@ -27,11 +47,6 @@
   {
     "label": "Innovation",
     "permalink": "/blog/tags/innovation",
-    "count": 1
-  },
-  {
-    "label": "Inclusivity",
-    "permalink": "/blog/tags/inclusivity",
     "count": 1
   },
   {
