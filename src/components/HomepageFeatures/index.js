@@ -47,7 +47,7 @@ In this article,  we will learn about Webpack and how to use Webpack loaders to 
     ),
   },
   {
-    title: 'FrontEnd Tools and Framework',
+    title: 'Frontend Tools and Frameworks',
     description: (
       <>
     In this article, You will understand about Frontend tools and frameworks and helpful resources to assist you in learning.
