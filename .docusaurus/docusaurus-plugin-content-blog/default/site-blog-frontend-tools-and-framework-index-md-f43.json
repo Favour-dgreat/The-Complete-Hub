@@ -1,0 +1,51 @@
+{
+  "permalink": "/blog/frontend-tools-and-framework",
+  "source": "@site/blog/frontend-tools-and-framework/index.md",
+  "title": "FrontEnd Tools and Framework",
+  "description": "In this article, You will understand about Frontend tools and frameworks and helpful resources to assist you in learning.",
+  "date": "2022-10-18T16:57:43.948Z",
+  "formattedDate": "October 18, 2022",
+  "tags": [
+    {
+      "label": "React",
+      "permalink": "/blog/tags/react"
+    },
+    {
+      "label": "Angular",
+      "permalink": "/blog/tags/angular"
+    },
+    {
+      "label": "Frontend Framework",
+      "permalink": "/blog/tags/frontend-framework"
+    }
+  ],
+  "readingTime": 2.96,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Shubhi-Paul",
+      "title": "College Student",
+      "url": "https://github.com/Shubhi-Paul",
+      "imageURL": "https://media-exp1.licdn.com/dms/image/C4D03AQEHD9i9g5aTZQ/profile-displayphoto-shrink_800_800/0/1648548209228?e=1671667200&v=beta&t=H2PmdrsHO7Z6krxn9EQQUwL3n7g9YrK9gL7ZSohxag8",
+      "key": "shubhi"
+    }
+  ],
+  "frontMatter": {
+    "slug": "frontend-tools-and-framework",
+    "title": "FrontEnd Tools and Framework",
+    "authors": "shubhi",
+    "tags": [
+      "React",
+      "Angular",
+      "Frontend Framework"
+    ]
+  },
+  "prevItem": {
+    "title": "A beginners guide to using webpack loaders",
+    "permalink": "/blog/a-beginners-guide-to-using-webpack-loaders"
+  },
+  "nextItem": {
+    "title": "Personality Test and Career Development",
+    "permalink": "/blog/personality-test-and-career-development"
+  }
+}

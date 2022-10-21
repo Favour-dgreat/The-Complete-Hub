@@ -1,5 +1,55 @@
 [
   {
+    "label": "Data",
+    "permalink": "/blog/tags/data",
+    "count": 1
+  },
+  {
+    "label": "Datascience",
+    "permalink": "/blog/tags/datascience",
+    "count": 1
+  },
+  {
+    "label": "Introduction",
+    "permalink": "/blog/tags/introduction",
+    "count": 1
+  },
+  {
+    "label": "webpack",
+    "permalink": "/blog/tags/webpack",
+    "count": 1
+  },
+  {
+    "label": "libraries",
+    "permalink": "/blog/tags/libraries",
+    "count": 1
+  },
+  {
+    "label": "JavaScript",
+    "permalink": "/blog/tags/java-script",
+    "count": 1
+  },
+  {
+    "label": "Compilers",
+    "permalink": "/blog/tags/compilers",
+    "count": 1
+  },
+  {
+    "label": "React",
+    "permalink": "/blog/tags/react",
+    "count": 1
+  },
+  {
+    "label": "Angular",
+    "permalink": "/blog/tags/angular",
+    "count": 1
+  },
+  {
+    "label": "Frontend Framework",
+    "permalink": "/blog/tags/frontend-framework",
+    "count": 1
+  },
+  {
     "label": "Personality Test",
     "permalink": "/blog/tags/personality-test",
     "count": 1

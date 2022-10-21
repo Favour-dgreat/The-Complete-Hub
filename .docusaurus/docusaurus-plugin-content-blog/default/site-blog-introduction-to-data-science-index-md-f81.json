@@ -1,0 +1,47 @@
+{
+  "permalink": "/blog/introduction-to-data-science-and-analysis",
+  "source": "@site/blog/introduction-to-data-science/index.md",
+  "title": "Introduction to Data Science and analysis",
+  "description": "image title",
+  "date": "2022-10-21T13:21:54.402Z",
+  "formattedDate": "October 21, 2022",
+  "tags": [
+    {
+      "label": "Data",
+      "permalink": "/blog/tags/data"
+    },
+    {
+      "label": "Datascience",
+      "permalink": "/blog/tags/datascience"
+    },
+    {
+      "label": "Introduction",
+      "permalink": "/blog/tags/introduction"
+    }
+  ],
+  "readingTime": 3.145,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Toluwalase Ajiboye",
+      "title": "Machine Learning Engineer",
+      "url": "https://github.com/metrosmash}",
+      "imageURL": "https://i.ibb.co/PFCpz8v/IMG-20220619-095336.jpg",
+      "key": "toluwalese"
+    }
+  ],
+  "frontMatter": {
+    "slug": "introduction-to-data-science-and-analysis",
+    "title": "Introduction to Data Science and analysis",
+    "authors": "toluwalese",
+    "tags": [
+      "Data",
+      "Datascience",
+      "Introduction"
+    ]
+  },
+  "nextItem": {
+    "title": "A beginners guide to using webpack loaders",
+    "permalink": "/blog/a-beginners-guide-to-using-webpack-loaders"
+  }
+}

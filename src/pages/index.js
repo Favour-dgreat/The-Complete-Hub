@@ -95,7 +95,7 @@ function HomepageHeader() {
     <hr style={{color:"black"}}></hr>
 
     <p style={{padding:20,textTransform: "uppercase", textAlign: "center", color: "#36CCF5"}}>From the Community</p>
-    <h2 style={{textAlign: "center", color: "#F8BC19"}}>Recently Published Articles</h2>
+    <h2 style={{textAlign: "center", color: "#F8BC19"}}>Latest Articles</h2>
     <hr style={{color:"#fff"}}></hr>
     <hr style={{color:"black"}}></hr>
 
@@ -113,6 +113,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+
       </main>
     </Layout>
   );

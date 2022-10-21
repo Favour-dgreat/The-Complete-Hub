@@ -1,0 +1,57 @@
+{
+  "permalink": "/blog/a-beginners-guide-to-using-webpack-loaders",
+  "source": "@site/blog/a-beginners-guide-to-using-wepack-loaders/index.md",
+  "title": "A beginners guide to using webpack loaders",
+  "description": "image title",
+  "date": "2022-10-19T09:47:38.700Z",
+  "formattedDate": "October 19, 2022",
+  "tags": [
+    {
+      "label": "webpack",
+      "permalink": "/blog/tags/webpack"
+    },
+    {
+      "label": "libraries",
+      "permalink": "/blog/tags/libraries"
+    },
+    {
+      "label": "JavaScript",
+      "permalink": "/blog/tags/java-script"
+    },
+    {
+      "label": "Compilers",
+      "permalink": "/blog/tags/compilers"
+    }
+  ],
+  "readingTime": 10.34,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Favour Adeshina",
+      "title": "Power Platform Advocate",
+      "url": "https://github.com/Favour-dgreat",
+      "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+      "key": "favour"
+    }
+  ],
+  "frontMatter": {
+    "slug": "a-beginners-guide-to-using-webpack-loaders",
+    "title": "A beginners guide to using webpack loaders",
+    "authors": "favour",
+    "tags": [
+      "webpack",
+      "libraries",
+      "JavaScript",
+      "Compilers"
+    ],
+    "canonical-url": "https://thecompletehub.tech/importing-external-files-using-webpack-loaders"
+  },
+  "prevItem": {
+    "title": "Introduction to Data Science and analysis",
+    "permalink": "/blog/introduction-to-data-science-and-analysis"
+  },
+  "nextItem": {
+    "title": "FrontEnd Tools and Framework",
+    "permalink": "/blog/frontend-tools-and-framework"
+  }
+}

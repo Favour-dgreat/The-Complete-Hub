@@ -320,13 +320,180 @@
       "blogSidebarTitle": "All posts",
       "blogPosts": [
         {
+          "id": "introduction-to-data-science-and-analysis",
+          "metadata": {
+            "permalink": "/blog/introduction-to-data-science-and-analysis",
+            "source": "@site/blog/introduction-to-data-science/index.md",
+            "title": "Introduction to Data Science and analysis",
+            "description": "image title",
+            "date": "2022-10-21T13:21:54.402Z",
+            "formattedDate": "October 21, 2022",
+            "tags": [
+              {
+                "label": "Data",
+                "permalink": "/blog/tags/data"
+              },
+              {
+                "label": "Datascience",
+                "permalink": "/blog/tags/datascience"
+              },
+              {
+                "label": "Introduction",
+                "permalink": "/blog/tags/introduction"
+              }
+            ],
+            "readingTime": 3.145,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Toluwalase Ajiboye",
+                "title": "Machine Learning Engineer",
+                "url": "https://github.com/metrosmash}",
+                "imageURL": "https://i.ibb.co/PFCpz8v/IMG-20220619-095336.jpg",
+                "key": "toluwalese"
+              }
+            ],
+            "frontMatter": {
+              "slug": "introduction-to-data-science-and-analysis",
+              "title": "Introduction to Data Science and analysis",
+              "authors": "toluwalese",
+              "tags": [
+                "Data",
+                "Datascience",
+                "Introduction"
+              ]
+            },
+            "nextItem": {
+              "title": "A beginners guide to using webpack loaders",
+              "permalink": "/blog/a-beginners-guide-to-using-webpack-loaders"
+            }
+          },
+          "content": "![image title](./banner-2.jpg)\n\nData science is all about extracting knowledge and insights from data. \nIf you wish to enter the **Data Science** world here is a brief tutorial as an introduction to Data Science. \n\n<!--truncate-->\n\n## Introduction\nData Science techniques have become more and more relevant in the world as we know it.\n\nIt is used in major tech giant companies like Netflix, Google, Amazon and so many more, it’s also used for research purposes. \n\n## The stages of Data Science Analysis\nThese are the different stages that a data scientist go through when working on to extract knowledge from data. To extract this information, they employ various fit-to-purpose models based on **machine learning algorithms, statistics, and mathematical methods.**\n\n![image title](./data-stages1.jpg)\n\n### Understanding Business Requirement\nOne of the questions that every data scientist should ask whenever they are embarking on a data analysis project is: \n- ***What is the objective of this project?*** \n- ***What is my aim on analysing this data?*** \n- ***What do I wish to predict?*** \n\nIt is required of a data scientist or anyone that wishes to gain insight from a data (raw or prepared) to know what they are looking for.\n\n### Data Acquisition\nThis is the Gathering of data from different sources once you know your business plan or requirement then you have to acquire the data that will be used to get this answers be it raw or prepared but in some cases for example kaggle competitions the data is already given therefore this stage can be skipped.\n\nThis can be done through web scraping, surveys and downloading data from reliable sources.\n\n### Data Processing or Cleaning\nMost data that comes from real world sources usually have faulty data, missing values. This is caused maybe by human error i.e. filling wrong data or leaving a space blank or through errors in the formatting of the data it’s in this stage that data is checked and cleaned so that the model that is created can be trained on it. This stage is also one of the most time consuming stages of data science as you might be cleaning thousands of rows and features of data.\n\n### Data Exploration\nIt’s in this stage that data scientist tries to understand the patterns between the features of a data and then gain useful insights on the data. It is also called Exploratory Data Analysis (EDA).\n\n### Data Modelling\nThis is the building stage where data scientist builds a model that learns or trains on the data and predicts answers to the business requirement and also answers some of stage one questions. Many library’s and frameworks are used for making models examples are scikit learn, tensorflow, pytorch and so on. \n\n### Data Visualization\nThis stage can also be done when performing data exploration as it can also be used to gain insight from data. It consists of ***Plotted Graphs, Scatter diagrams, Bars and Histograms diagrams, Box Plots, Pair Plots and so on.***\n\nIt is also used to show readers interesting insights and relationship between features of data.\n\nTherefore, this is an important stage of data science. Some examples of library’s and frameworks used in this stage are matplotlib and seaborn.\n\n### Deployment and Optimization\nThis is the final stage for Data analysis and in this stage, your model has been trained. But the accuracy (how well your model can predict an unseen data) needs to be tested, and if the accuracy is low you need to increase this accuracy. This is done through (https://www.projectpro.io/article/8-feature-engineering-techniques-for-machine-learning/423)[Feature Engineering methods]. Examples of deployed models, are the google search engine, the google ads system and so many more.\n\n## Conclusion\nI hope you learnt something and you are intrigued about data science and wish to learn more on this vast and knowledgeable field."
+        },
+        {
+          "id": "a-beginners-guide-to-using-webpack-loaders",
+          "metadata": {
+            "permalink": "/blog/a-beginners-guide-to-using-webpack-loaders",
+            "source": "@site/blog/a-beginners-guide-to-using-wepack-loaders/index.md",
+            "title": "A beginners guide to using webpack loaders",
+            "description": "image title",
+            "date": "2022-10-19T09:47:38.700Z",
+            "formattedDate": "October 19, 2022",
+            "tags": [
+              {
+                "label": "webpack",
+                "permalink": "/blog/tags/webpack"
+              },
+              {
+                "label": "libraries",
+                "permalink": "/blog/tags/libraries"
+              },
+              {
+                "label": "JavaScript",
+                "permalink": "/blog/tags/java-script"
+              },
+              {
+                "label": "Compilers",
+                "permalink": "/blog/tags/compilers"
+              }
+            ],
+            "readingTime": 10.34,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Favour Adeshina",
+                "title": "Power Platform Advocate",
+                "url": "https://github.com/Favour-dgreat",
+                "imageURL": "https://avatars.githubusercontent.com/u/53022031?v=4",
+                "key": "favour"
+              }
+            ],
+            "frontMatter": {
+              "slug": "a-beginners-guide-to-using-webpack-loaders",
+              "title": "A beginners guide to using webpack loaders",
+              "authors": "favour",
+              "tags": [
+                "webpack",
+                "libraries",
+                "JavaScript",
+                "Compilers"
+              ],
+              "canonical-url": "https://thecompletehub.tech/importing-external-files-using-webpack-loaders"
+            },
+            "prevItem": {
+              "title": "Introduction to Data Science and analysis",
+              "permalink": "/blog/introduction-to-data-science-and-analysis"
+            },
+            "nextItem": {
+              "title": "FrontEnd Tools and Framework",
+              "permalink": "/blog/frontend-tools-and-framework"
+            }
+          },
+          "content": "![image title](./Webpack%20Hero-Img.png)\nThis article was previously published at [thecompeletehub.tech](https://thecompletehub.tech/importing-external-files-using-webpack-loaders. \n\nIn this article,  we will learn about Webpack and how to use Webpack loaders to import external files while making use of Webpack. \n<!--truncate-->\n\n## Introduction\n\nWebpack may not be straightforward at first, but you will get the hang of it after working with it for some time. \n\nThis tutorial is tailored to suit the needs of a beginner. As a prerequisite, your understanding of HTML, CSS, JavaScript, and the use of the Terminal or a Command Line Interface (CLI) will be helpful. \n\n## Table Of Contents\n1. What is Webpack?\n2. Installing Webpack\n3. Loaders and Plugins\n4. Making use of Webpack loaders to import various types of files\n\nLet us dive in!\n\n## What is Webpack?\nWebpack is a tool that allows you to modularise your code and helps you to push your codes to one file so you do not need to worry about the hierarchy of your files, especially when working with multiple JavaScript files. \n\nWebpack also helps you to inject external files, like an SVG, images, your CSS files, or other modern JS codes, into your web app. \n\n**For a more elaborate definition of Webpack, I find this Wiki's Definition of Webpack to be quite helpful. [Wikipedia's Definition of Webpack](https://en.wikipedia.org/wiki/Webpack)**\n\n## Installing Webpack\nTo get started, firstly let us create a directory or folder, save it as \"webpack_tutorial\" or whatsoever you find appropriate. \n\nSecondly, we are going to open the \"webpack_tutorial\" folder with your favorite code editor, in my case is Visual Studio Code!\n\nSo I am going to head over to Visual Studio Code and then drag and drop the Folder we last created.\n\n![webpack2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366396574/lhNTHXYhI.png)\n\nAs you can see there is no file in our folder and this is totally fine!\n\nThe next thing, is to initialize NPM (Node Package Manager), so I am going to open my VS Code Terminal and execute this command: \n\n```\nnpm init\n```\n\n![webpack Image 3.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366427628/7BW6csthf.png)\n\n**Note: You can only run the npm init command if NodeJs is properly installed on your device. Kindly Check out this link to install NodeJS [Installing NodeJS with Package Manager](https://nodejs.org/en/download/package-manager/)**\n\n![webpack Image 4.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366483347/Au8rcPJEK.png)\n\nIf you initialized npm properly, it will generate a package.json file for you, just like I have here.\n\nKindly note that you can always adjust the name, description, author, etc., in your package.json file\n\nNow, we have properly initialized our node package manager and we have our package.json file. The next thing to do is to install Webpack. One thing you should note is that installing Webpack only, can make you have some issues later on, so it is always advisable to install Webpack along with the CLI. So you execute the command below in your terminal. \n\n```\nnpm i webpack webpack-cli --save-dev\n```\n\n![webpack](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366518838/ObOwtI2LR.png)\n\nIf you successfully installed Webpack and the CLI, by executing the command above, you should have a package-lock.json file and the node_modules folder in your root directory, just like I have here.\n\nMoving forward now, the first thing to do in configuring your webpack, is to create a new file in your root directory and name it webpack.config.js, and then we are going to add some codes into this our newly created configuration file. \n\nAdd the following codes into your webpack.config.js file:\n\n```\nmodule.exports = {\n    entry: \"./app/index.js\"\n};\n```\nSo in the code, above we have the module.exports object and then we declared the entry point for our project which is the app directory and in the app directory, you have the index.js file which is your main file. \n\nThe next thing is to create our app folder in our root directory and inside that app folder, you create a new file called index.js, which is the entry point file location specified in the module.exports object.\n\n## Loaders and Plugins\nNow we have successfully installed webpack and set up our webpack.config.js file. So before we continue to import our files using Webpack loaders, you need to understand what are loaders and plugins, because this is what we will be using to successfully handle the importation of our files. \n\nWhenever there are new things to load in the webpack, for example, we want to import an SVG, or a CSS file, the job of the loaders is simply to bring in these files that we need while things are loaded. So before the final output.js file is created whatever configuration you need to do, to bring in your files is handled by the loaders. And whatever configuration that you need to do after the output.js file is created is handled by the plugins. \n\nAs we proceed to import external files using webpack loaders we will understand more the work of the loaders and plugins. \n\n## Making use of Webpack loaders to import various types of files. \n\n**Importing your CSS File**\nThe first thing we are going to do is to execute the command below in our terminal\n\n```\nnpm install --save-dev css-loader style-loader\n```\n\nThen you add the following into your webpack.config.js file\n\n\n ```\n module: {\n    rules: [\n      {\n        test: /\\.css$/i,\n        use: [\"style-loader\", \"css-loader\"],\n      },\n    ],\n  },\n```\n\n![webpack config file new look](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366585041/se1Y64Y_D.png)\n\nYour webpack.config.js file should now look like this. \n\nWe have successfully configured our webpack.config.js file now to be able to load our CSS files and inject our styles into our JavaScript file. \n\n**Importing an SVG file**\nThe first thing to do is to install the SVG Inline Loader for Webpack. You execute the command below in the terminal, to do this. \n\n```\nnpm install svg-inline-loader --save-dev\n```\nAfter successfully installing the SVG Inline loader for webpack, using the command above, the next thing is to add your configuration in your webpack.config.js file. So you add the code below to your webpack.config.js file, in your rules array. \n\n```\n    {\n        test: /\\.svg$/,\n        use: 'svg-inline-loader'\n    }\n```\nIf you did that correctly, your webpack.config.js should look like this. \n\n\n![webpack config file new look 2](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366599069/UkAyPF5xa.png)\n\n**Kindly note that in some other learning resources, you will have them make use of loader instead of use while trying to configure our SVG file in the rules array, but for consistency, we will make use of use instead of the loader. Also, I have found out that in recent learning resources/docs they make use of \" use\" instead of the loader, for example in the documentation screenshot below, the loader was used instead.**\n\n\n![webpack config file new look 3](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366614245/Uw7tATi2s.png)\n\n[Image Source](https://www.npmjs.com/package/svg-inline-loader)\n\n\n**Importing images**\nFirstly, you are going to install the Image Loader for Webpack by executing the command in your terminal below:\n\n```\n$ npm install img-loader --save-dev\n```\nNext, we are going to add the Image loader configuration in our webpack.config.js file:\n\n```\n    {\n      test: /\\.(jpe?g|png|gif|svg)$/i,\n      use: [\n        'url-loader?limit=10000',\n        'img-loader'\n      ]\n    }\n```\n\n![webpack config file new look 4](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366653999/_YCDr5UUK.png)\n\nYour webpack.config.js file should look like this if you added the Image Loader configuration properly. \n\n**Importing Babel** \nThis tutorial is targeted at beginners, but I am going to show you how to also import your Babel JS file. \n\nThe first thing we are going to be doing is to run the command below in our terminal to install the Babel Loader package. \n\n```\nnpm install --save-dev babel-loader\n```\nIf you have successfully installed the Babel Loader Package, then we are going to add some configuration in our webpack.config.js file and we will be writing Regex Code. Just copy and add the following in your webpack.config.js file. \n\n```\n    {\n        test: /\\.(js)$/,\n        use: \"babel-loader\",\n    },\n```\nAfter doing that your webpack.config.js file should now look like this\n\n\n![webpack config file new look 5](https://cdn.hashnode.com/res/hashnode/image/upload/v1644680930811/KdWNCHoOl.png)\n\nWe have seen how to import our CSS, SVG, Image, and Babel files by installing their packages and adding the configuration in our webpack.config.js file but that is not all. \n\nThe next thing we are going to be doing now is to add the output object in our webpack.config.js file. \n\nSo we are going to create an output object and add the path and filename parameter into this object, just copy the code below:\n\n```\noutput: {\n        path: path.resolve(__dirname, \"dist\"),\n        filename: \"bundle.js\"\n    }\n```\nAlso, we are going to be importing another module which is the path and this comes directly as long as you are using node, so you do not need to install it, just add this code to the top of your webpack.config.js. file \n\n```\nconst path = require(\"path\")\n```\nIf you did everything correctly your webpack.config.js should now look like this\n\n\n![webpack config file new look 6](https://cdn.hashnode.com/res/hashnode/image/upload/v1644681218014/El28jeauTw.png)\n\nOne thing to note here is that you are importing four different files and those files will be bundled up into our bundle.js file but we also need to inject these files into our HTML file, and that is what we are going to be doing next, with the help of HTML webpack plugin. \n\nTo install the HTML Webpack Plugin, we run the command below in the terminal: \n\n```\nnpm install --save-dev html-webpack-plugin\n```\nThe next thing to do is to add the code below to the top of our webpack.config.js file\n\n```\nconst HtmlWebpackPlugin = require('html-webpack-plugin');\n```\n\nThen we add the plugins after the output with the code below: \n\n```\n  plugins: [new HtmlWebpackPlugin()],\n```\n\n![webpack config file new look 7](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366786930/m2GwXkpsl.png)\n\nIf you did everything correctly, your webpack.config.js file should now be like this. \n\nFinally, we are going to be installing the Webpack Development Server. \n\nExecute the command below in your terminal:\n```\nnpm install webpack-dev-server --save-dev\n```\n**Note while configuring your webpack there are two modes which are the Production and Development modes, so we are going to declare our modes in the webpack.config.js file**\n\nAdd the following to your webpack.config.js file to declare the mode. \n\n```\nmode: process.env.NODE_ENV === \"production\" ? \"production\" : \"development\",\n```\nIn the code above we defined our Environment Variarbale or env and called it NODE_ENV and then we assigned the mode to production and gave a condition. In assigning the mode to production, I did not assign it directly as you will find in some other learning resources or documentation. Instead, I assigned the mode with a conditional statement. The condition we gave in the code above is: If it is defined as the production, go ahead and use production mode or else use the development mode.  To define your mode to be development, kindly use this instead: \n\n```\nmode: process.env.NODE_ENV === \"development\" ? \"development\" : \"production\",\n```\n\nThe next thing to do is to add a start and build script, so add the following in your package.json file\n\n```\n    \"start\": \"webpack serve\",\n    \"build\": \"NODE_ENV='production' webpack\",\n```\n\nNow all configuration has been done in our webpack.config.js file, so if we have an SVG file, an image, or a CSS file, our webpack has been configured properly to handle these files. \n\nRemember the index.js file we created earlier, inside the app folder, we will go ahead to just add some codes, to test everything we have done so far, so copy the codes below into your index.js file. \n\n```\nconst evenNumbers = [2, 4, 6, 8, 10];\nconsole.log(evenNumbers);\n```\nNow execute the following commands in your terminal:\n\n```\nnpm run build\n```\n\n```\nnpm start\n```\nAfter running these two commands, we see that we now have some files that are automatically generated for us. \n\n\n![webpack config file new look 8](https://cdn.hashnode.com/res/hashnode/image/upload/v1644366707937/odqyVYJ_v.png)\n\nRemember that we added an Array of Even Numbers in our index.js file and logged the array to the console. Now we also get our console.log coming into our bundle.js file and then in our index.html file generated by our HTML Webpack plugin we have the script tag that has its source pointed to our bundle.js file. As shown in the images below: \n\n\n![bundle_file_img.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644681343827/yHHrPGFPc.png)\n\n![html_file.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1644681368417/MwTxoQQQK.png)\n\nThis shows that we have configured our webpack properly in our webpack.config.js file. \n\nNow you can have a CSS file, an SVG file, an image file, or a modern JS file (Babel JS), in your web project and webpack will help to modularize your files.\n\n\nHoping you try this out more!\n\n## Conclusion\nIn Conclusion:\n- We gave a brief description of Webpack\n- We learned how to install webpack \n- We briefly discussed about Loaders and plugins\n- And then we saw how to make use of webpack loaders to import various file types using a step-by-step approach. \n\n## Further Reading\n1. [Installing Webpack](https://webpack.js.org/guides/getting-started/)\n2. [Webpack Loaders and Plugins](https://stackoverflow.com/questions/37452402/webpack-loaders-vs-plugins-whats-the-difference)\n3. [Making use of webpack loaders to import various file types](https://webpack.js.org/guides/asset-management/)\n\nHappy Coding!"
+        },
+        {
+          "id": "frontend-tools-and-framework",
+          "metadata": {
+            "permalink": "/blog/frontend-tools-and-framework",
+            "source": "@site/blog/frontend-tools-and-framework/index.md",
+            "title": "FrontEnd Tools and Framework",
+            "description": "In this article, You will understand about Frontend tools and frameworks and helpful resources to assist you in learning.",
+            "date": "2022-10-18T16:57:43.948Z",
+            "formattedDate": "October 18, 2022",
+            "tags": [
+              {
+                "label": "React",
+                "permalink": "/blog/tags/react"
+              },
+              {
+                "label": "Angular",
+                "permalink": "/blog/tags/angular"
+              },
+              {
+                "label": "Frontend Framework",
+                "permalink": "/blog/tags/frontend-framework"
+              }
+            ],
+            "readingTime": 2.96,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Shubhi-Paul",
+                "title": "College Student",
+                "url": "https://github.com/Shubhi-Paul",
+                "imageURL": "https://media-exp1.licdn.com/dms/image/C4D03AQEHD9i9g5aTZQ/profile-displayphoto-shrink_800_800/0/1648548209228?e=1671667200&v=beta&t=H2PmdrsHO7Z6krxn9EQQUwL3n7g9YrK9gL7ZSohxag8",
+                "key": "shubhi"
+              }
+            ],
+            "frontMatter": {
+              "slug": "frontend-tools-and-framework",
+              "title": "FrontEnd Tools and Framework",
+              "authors": "shubhi",
+              "tags": [
+                "React",
+                "Angular",
+                "Frontend Framework"
+              ]
+            },
+            "prevItem": {
+              "title": "A beginners guide to using webpack loaders",
+              "permalink": "/blog/a-beginners-guide-to-using-webpack-loaders"
+            },
+            "nextItem": {
+              "title": "Personality Test and Career Development",
+              "permalink": "/blog/personality-test-and-career-development"
+            }
+          },
+          "content": "In this article, You will understand about Frontend tools and frameworks and helpful resources to assist you in learning. \n<!--truncate-->\n\n# Introduction\n\n**Front End Development Tool** is a software application which helps web developers to build attractive, designer website layouts with ease and provide them ability to debug and test the code and interface of the website or application they're creating.\n\nThese tools can provide wide range of templates to interact with browser components, including prepared code that programmers can use to fix common programming tasks.\n\nFrontend Frameworks are CSS frameworks and packages having pre-written, standardized code in folders and files. Their purpose is to assist in development by providing standard, low-level functionality so that developers can focus efforts on the other elements that make the project unique. This increases software reliability, speeds up programming time and simplifies testing.\n\nThe top three frontend frameworks of 2022 are **React , Angular and Vue.**\n\n## React\n\nReact. js framework developed by **Facebook**, is an *open-source* JavaScript framework and library used for building user interfaces. React code can be written directly in HTML.\n\nReact specializes in creating UI components and enhancing client user experience. It is light as it eliminates the need to use extra elements like plugins. React instead of using two-way binding, intentionally prefers use of explicit updates.\n\nComponents with build feature that manages  its own state form basics to create such complex UIs.  Since component logic is written in JavaScript, rich data can easily be passed through the app and keep state out of the DOM.\n\nLearn React [here](https://reactjs.org/docs/getting-started.html). \nCheck out the new [React docs : beta version](https://beta.reactjs.org).\n\nNetflix, Instagram, Dropbox websites are created using React.\n\n## Angular\nAngular is led by the **Angular Team at Google**  and a community of individuals and corporations. It is a platform and TypeScript-based *free and open-source* web application framework. Angular is built by the same team that built AngularJS.\n\nAngular specialized in building single-page client applications using HTML and TypeScript.  It can also be used for creating web, mobile web, native mobile and native desktop websites. It implements core and optional functionality as a set of TypeScript libraries that you can be easily imported into applications.\n\nAngular meets huge data requirements by building data models on RxJS, Immutable.js or another push-model. You can even extend the template language with your own components as well as use a wide array of existing components.\n\nAngular is preferred if your application is enterprise-grade and you need to incorporate complex functionalities like single-page,  progressive and native web apps.\n\nGet started with [Angular](https://angular.io/start)\n\n## React vs Angular\n\n|| React |Angular |\n|---|--|--|\n|**Data binding** | One-way data binding | Two-way data binding |\n| **Speed** | Faster |Slower| \n|**Bundle Size** | Smaller | Larger |\n|**DOM** | Virtual | Real |\n|**Learning Curve** |  Moderate | Steep |\n| **UI Rendering** | Server Side Rendering |Server Side Rendering |\n| **Concept** | bring HTML into JS Works | bring JavaScript into HTML Works |\n\nReact is preferred over Angular due to it's virtual DOM implementation and rendering optimizations. Additionally, migrating between React's versions is quite easy. Unlike as in Angular, here you don't need to install updates one by one. To top off, React provides developers with  countless existing solutions that they can use.\n\n## Conclusion\nReact and Angular are both some of the best front end frameworks to use. While deciding the right framework for your application, few things to keep in mind -\n- Core features \n-  Available tools\n- Ease of integration\n- Performance\n- Learning curve"
+        },
+        {
           "id": "personality-test-and-career-development",
           "metadata": {
             "permalink": "/blog/personality-test-and-career-development",
             "source": "@site/blog/personality-test-and-career-development/index.md",
             "title": "Personality Test and Career Development",
             "description": "image title",
-            "date": "2022-09-28T07:38:26.000Z",
+            "date": "2022-09-28T10:05:30.000Z",
             "formattedDate": "September 28, 2022",
             "tags": [
               {
@@ -362,6 +529,10 @@
                 "Career Development",
                 "Morale Building"
               ]
+            },
+            "prevItem": {
+              "title": "FrontEnd Tools and Framework",
+              "permalink": "/blog/frontend-tools-and-framework"
             },
             "nextItem": {
               "title": "Building an Inclusive Tech Community",
@@ -1055,6 +1226,9 @@
       "blogListPaginated": [
         {
           "items": [
+            "introduction-to-data-science-and-analysis",
+            "a-beginners-guide-to-using-webpack-loaders",
+            "frontend-tools-and-framework",
             "personality-test-and-career-development",
             "building-an-inclusive-community",
             "tech-community-and-what-it-entails",
@@ -1071,15 +1245,245 @@
           "metadata": {
             "permalink": "/blog",
             "page": 1,
-            "postsPerPage": 12,
+            "postsPerPage": 15,
             "totalPages": 1,
-            "totalCount": 12,
+            "totalCount": 15,
             "blogDescription": "Blog",
             "blogTitle": "Blog"
           }
         }
       ],
       "blogTags": {
+        "/blog/tags/data": {
+          "label": "Data",
+          "items": [
+            "introduction-to-data-science-and-analysis"
+          ],
+          "permalink": "/blog/tags/data",
+          "pages": [
+            {
+              "items": [
+                "introduction-to-data-science-and-analysis"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/data",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/datascience": {
+          "label": "Datascience",
+          "items": [
+            "introduction-to-data-science-and-analysis"
+          ],
+          "permalink": "/blog/tags/datascience",
+          "pages": [
+            {
+              "items": [
+                "introduction-to-data-science-and-analysis"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/datascience",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/introduction": {
+          "label": "Introduction",
+          "items": [
+            "introduction-to-data-science-and-analysis"
+          ],
+          "permalink": "/blog/tags/introduction",
+          "pages": [
+            {
+              "items": [
+                "introduction-to-data-science-and-analysis"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/introduction",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/webpack": {
+          "label": "webpack",
+          "items": [
+            "a-beginners-guide-to-using-webpack-loaders"
+          ],
+          "permalink": "/blog/tags/webpack",
+          "pages": [
+            {
+              "items": [
+                "a-beginners-guide-to-using-webpack-loaders"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/webpack",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/libraries": {
+          "label": "libraries",
+          "items": [
+            "a-beginners-guide-to-using-webpack-loaders"
+          ],
+          "permalink": "/blog/tags/libraries",
+          "pages": [
+            {
+              "items": [
+                "a-beginners-guide-to-using-webpack-loaders"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/libraries",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/java-script": {
+          "label": "JavaScript",
+          "items": [
+            "a-beginners-guide-to-using-webpack-loaders"
+          ],
+          "permalink": "/blog/tags/java-script",
+          "pages": [
+            {
+              "items": [
+                "a-beginners-guide-to-using-webpack-loaders"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/java-script",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/compilers": {
+          "label": "Compilers",
+          "items": [
+            "a-beginners-guide-to-using-webpack-loaders"
+          ],
+          "permalink": "/blog/tags/compilers",
+          "pages": [
+            {
+              "items": [
+                "a-beginners-guide-to-using-webpack-loaders"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/compilers",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/react": {
+          "label": "React",
+          "items": [
+            "frontend-tools-and-framework"
+          ],
+          "permalink": "/blog/tags/react",
+          "pages": [
+            {
+              "items": [
+                "frontend-tools-and-framework"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/react",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/angular": {
+          "label": "Angular",
+          "items": [
+            "frontend-tools-and-framework"
+          ],
+          "permalink": "/blog/tags/angular",
+          "pages": [
+            {
+              "items": [
+                "frontend-tools-and-framework"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/angular",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/frontend-framework": {
+          "label": "Frontend Framework",
+          "items": [
+            "frontend-tools-and-framework"
+          ],
+          "permalink": "/blog/tags/frontend-framework",
+          "pages": [
+            {
+              "items": [
+                "frontend-tools-and-framework"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/frontend-framework",
+                "page": 1,
+                "postsPerPage": 1,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
         "/blog/tags/personality-test": {
           "label": "Personality Test",
           "items": [

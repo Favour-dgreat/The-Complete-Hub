@@ -44,7 +44,12 @@ export default [
   },
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'cca'),
+    component: ComponentCreator('/blog', '633'),
+    exact: true
+  },
+  {
+    path: '/blog/a-beginners-guide-to-using-webpack-loaders',
+    component: ComponentCreator('/blog/a-beginners-guide-to-using-webpack-loaders', '30b'),
     exact: true
   },
   {
@@ -68,6 +73,11 @@ export default [
     exact: true
   },
   {
+    path: '/blog/frontend-tools-and-framework',
+    component: ComponentCreator('/blog/frontend-tools-and-framework', '3d7'),
+    exact: true
+  },
+  {
     path: '/blog/introduction to data engineering',
     component: ComponentCreator('/blog/introduction to data engineering', '7cc'),
     exact: true
@@ -75,6 +85,11 @@ export default [
   {
     path: '/blog/introduction-to-carbon-programming-language',
     component: ComponentCreator('/blog/introduction-to-carbon-programming-language', 'fed'),
+    exact: true
+  },
+  {
+    path: '/blog/introduction-to-data-science-and-analysis',
+    component: ComponentCreator('/blog/introduction-to-data-science-and-analysis', '153'),
     exact: true
   },
   {
@@ -95,6 +110,11 @@ export default [
   {
     path: '/blog/tags',
     component: ComponentCreator('/blog/tags', '78c'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/angular',
+    component: ComponentCreator('/blog/tags/angular', 'd10'),
     exact: true
   },
   {
@@ -148,6 +168,16 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/compilers',
+    component: ComponentCreator('/blog/tags/compilers', '85c'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/data',
+    component: ComponentCreator('/blog/tags/data', 'd65'),
+    exact: true
+  },
+  {
     path: '/blog/tags/data-connectors',
     component: ComponentCreator('/blog/tags/data-connectors', '10a'),
     exact: true
@@ -168,8 +198,18 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/datascience',
+    component: ComponentCreator('/blog/tags/datascience', 'c0e'),
+    exact: true
+  },
+  {
     path: '/blog/tags/express',
     component: ComponentCreator('/blog/tags/express', '3fe'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/frontend-framework',
+    component: ComponentCreator('/blog/tags/frontend-framework', 'c24'),
     exact: true
   },
   {
@@ -195,6 +235,21 @@ export default [
   {
     path: '/blog/tags/innovation',
     component: ComponentCreator('/blog/tags/innovation', '5b7'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/introduction',
+    component: ComponentCreator('/blog/tags/introduction', '475'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/java-script',
+    component: ComponentCreator('/blog/tags/java-script', '8b5'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/libraries',
+    component: ComponentCreator('/blog/tags/libraries', 'c7b'),
     exact: true
   },
   {
@@ -263,6 +318,11 @@ export default [
     exact: true
   },
   {
+    path: '/blog/tags/react',
+    component: ComponentCreator('/blog/tags/react', 'f56'),
+    exact: true
+  },
+  {
     path: '/blog/tags/static-files',
     component: ComponentCreator('/blog/tags/static-files', '44c'),
     exact: true
@@ -290,6 +350,11 @@ export default [
   {
     path: '/blog/tags/web-server',
     component: ComponentCreator('/blog/tags/web-server', 'c46'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/webpack',
+    component: ComponentCreator('/blog/tags/webpack', '732'),
     exact: true
   },
   {

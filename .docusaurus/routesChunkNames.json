@@ -49,13 +49,22 @@
     },
     "config": "config---author-author-5-e-9-a94"
   },
-  "/blog-cca": {
+  "/blog-633": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---blog-593-1d4"
     },
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
+      {
+        "content": "content---blog-4-cb-7b1"
+      },
+      {
+        "content": "content---blog-7-ff-c44"
+      },
+      {
+        "content": "content---blog-2-ff-9f2"
+      },
       {
         "content": "content---blog-66-c-9a9"
       },
@@ -95,6 +104,14 @@
     ],
     "metadata": "metadata---blogb-2-b-df1"
   },
+  "/blog/a-beginners-guide-to-using-webpack-loaders-30b": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-a-beginners-guide-to-using-webpack-loaders-907-c60"
+  },
   "/blog/archive-7f9": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
@@ -126,6 +143,14 @@
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-embedding-static-files-in-cli-with-go-embed-8-bc-57e"
   },
+  "/blog/frontend-tools-and-framework-3d7": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-frontend-tools-and-frameworkf-43-c41"
+  },
   "/blog/introduction to data engineering-7cc": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
@@ -141,6 +166,14 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "content": "content---blog-introduction-to-carbon-programming-language-707-d6b"
+  },
+  "/blog/introduction-to-data-science-and-analysis-153": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-introduction-to-data-science-and-analysisf-81-d1c"
   },
   "/blog/introduction-to-power-platform-d05": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
@@ -173,6 +206,20 @@
     },
     "sidebar": "sidebar---blog-814-8ac",
     "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/angular-d10": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-2-ff-9f2"
+      }
+    ],
+    "tag": "tag---blog-tags-angularf-25-164",
+    "listMetadata": "listMetadata---blog-tags-angulara-52-3bd"
   },
   "/blog/tags/anxiety-ab0": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -323,6 +370,34 @@
     "tag": "tag---blog-tags-community-building-62-e-dbc",
     "listMetadata": "listMetadata---blog-tags-community-building-3-c-4-ae2"
   },
+  "/blog/tags/compilers-85c": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-7-ff-c44"
+      }
+    ],
+    "tag": "tag---blog-tags-compilers-321-636",
+    "listMetadata": "listMetadata---blog-tags-compilers-269-021"
+  },
+  "/blog/tags/data-d65": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-4-cb-7b1"
+      }
+    ],
+    "tag": "tag---blog-tags-data-332-83e",
+    "listMetadata": "listMetadata---blog-tags-datae-0-e-40d"
+  },
   "/blog/tags/data-connectors-10a": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
@@ -379,6 +454,20 @@
     "tag": "tag---blog-tags-data-workfloweaa-eb3",
     "listMetadata": "listMetadata---blog-tags-data-workflow-60-d-218"
   },
+  "/blog/tags/datascience-c0e": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-4-cb-7b1"
+      }
+    ],
+    "tag": "tag---blog-tags-datascience-0-e-9-b44",
+    "listMetadata": "listMetadata---blog-tags-datasciencedda-de5"
+  },
   "/blog/tags/express-3fe": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
@@ -392,6 +481,20 @@
     ],
     "tag": "tag---blog-tags-expressbc-5-8d7",
     "listMetadata": "listMetadata---blog-tags-expressf-52-a05"
+  },
+  "/blog/tags/frontend-framework-c24": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-2-ff-9f2"
+      }
+    ],
+    "tag": "tag---blog-tags-frontend-frameworkad-2-0c0",
+    "listMetadata": "listMetadata---blog-tags-frontend-frameworka-66-705"
   },
   "/blog/tags/go-aab": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -462,6 +565,48 @@
     ],
     "tag": "tag---blog-tags-innovation-2-b-7-283",
     "listMetadata": "listMetadata---blog-tags-innovation-860-8e1"
+  },
+  "/blog/tags/introduction-475": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-4-cb-7b1"
+      }
+    ],
+    "tag": "tag---blog-tags-introduction-204-dbd",
+    "listMetadata": "listMetadata---blog-tags-introduction-5-ad-a84"
+  },
+  "/blog/tags/java-script-8b5": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-7-ff-c44"
+      }
+    ],
+    "tag": "tag---blog-tags-java-scripta-8-f-6aa",
+    "listMetadata": "listMetadata---blog-tags-java-script-2-c-9-a77"
+  },
+  "/blog/tags/libraries-c7b": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-7-ff-c44"
+      }
+    ],
+    "tag": "tag---blog-tags-librariesef-0-d0d",
+    "listMetadata": "listMetadata---blog-tags-libraries-490-e26"
   },
   "/blog/tags/low-code-b9b": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
@@ -672,6 +817,20 @@
     "tag": "tag---blog-tags-proxy-05-b-43b",
     "listMetadata": "listMetadata---blog-tags-proxy-6-e-8-011"
   },
+  "/blog/tags/react-f56": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-2-ff-9f2"
+      }
+    ],
+    "tag": "tag---blog-tags-react-986-5dd",
+    "listMetadata": "listMetadata---blog-tags-react-76-d-cbc"
+  },
   "/blog/tags/static-files-44c": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
@@ -758,6 +917,20 @@
     ],
     "tag": "tag---blog-tags-web-server-29-e-88c",
     "listMetadata": "listMetadata---blog-tags-web-serverdd-7-382"
+  },
+  "/blog/tags/webpack-732": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-593-1d4"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-7-ff-c44"
+      }
+    ],
+    "tag": "tag---blog-tags-webpack-0-a-4-eb3",
+    "listMetadata": "listMetadata---blog-tags-webpack-316-7b0"
   },
   "/blog/tech-community-and-what-it-entails-452": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",

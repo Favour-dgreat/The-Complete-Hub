@@ -3,7 +3,7 @@
   "source": "@site/blog/personality-test-and-career-development/index.md",
   "title": "Personality Test and Career Development",
   "description": "image title",
-  "date": "2022-09-28T07:38:26.000Z",
+  "date": "2022-09-28T10:05:30.000Z",
   "formattedDate": "September 28, 2022",
   "tags": [
     {
@@ -39,6 +39,10 @@
       "Career Development",
       "Morale Building"
     ]
+  },
+  "prevItem": {
+    "title": "FrontEnd Tools and Framework",
+    "permalink": "/blog/frontend-tools-and-framework"
   },
   "nextItem": {
     "title": "Building an Inclusive Tech Community",
